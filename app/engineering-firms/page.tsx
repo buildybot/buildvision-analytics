@@ -43,7 +43,7 @@ export default async function EngineeringFirmsPage() {
         <p className="text-[#6C6C71] text-sm mb-8">Specifier relationships — BOD%, loyalty, and competitive position</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
         <KpiCard label="Avg Carrier BOD%" value={`${Math.round(avgBOD)}%`} sub="Across all tracked firms" icon={Building2} color="blue" />
         <KpiCard label="Strong Relationships" value={strongCount} sub="Firms with ≥30% Carrier BOD" icon={TrendingUp} color="green" />
         <KpiCard label="At-Risk Firms" value={atRiskCount} sub="Competitor leads Carrier BOD" icon={Users} color="red" />

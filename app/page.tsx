@@ -89,7 +89,7 @@ export default async function OverviewPage() {
   const marketSharePct = totalSpecAll > 0 ? Math.round(((carrierRow?.count ?? 0) / totalSpecAll) * 100) : 0;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       {/* Page Header */}
       <div className="pb-2">
         <div className="flex items-center gap-3 mb-2">
@@ -102,7 +102,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* KPI Strip */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <KpiCard
           label="Spec Win Rate"
           value={`${winRate}%`}
@@ -136,7 +136,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* Second row */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <KpiCard label="Manufacturers Tracked" value={data.totalMfgs.count} icon={Building2} color="blue" sub="Including Carrier" />
         <KpiCard label="Engineering Firms" value={data.totalFirms.count} icon={Users} color="purple" sub="Active specifiers" />
         <KpiCard label="Channel Partners" value={data.totalSubs.count} icon={Wrench} color="amber" sub="Mechanical subs tracked" />
@@ -160,9 +160,9 @@ export default async function OverviewPage() {
       />
 
       {/* Bottom Row: Top Firms + Recent Activity */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Top BOD Firms */}
-        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-6">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-8">
           <SectionHeader title="Top Specifying Firms" subtitle="Carrier BOD % (2025) — firms who spec Carrier most" />
           <div className="space-y-2">
             {data.topFirms.map((firm, i) => (
@@ -190,7 +190,7 @@ export default async function OverviewPage() {
         </div>
 
         {/* Recent Activity */}
-        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-6">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-8">
           <SectionHeader title="Recent Spec Activity" subtitle="Latest projects — Carrier specs nationwide" />
           <div className="space-y-2">
             {data.recentActivity.map((act) => (

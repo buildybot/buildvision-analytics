@@ -179,7 +179,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <div className="px-10 py-8 max-w-[1600px] mx-auto">
+        <div className="px-12 py-10 max-w-[1600px] mx-auto">
           {children}
         </div>
       </main>

@@ -159,7 +159,7 @@ export default async function ChannelPartnersPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <KpiCard label="Visible Sub Relationships" value={data.aggregated.length} sub={`From ${data.visibleCount} sharing reps`} icon={Wrench} color="blue" />
         <KpiCard label="Total Annual Volume" value={`$${(data.totalVolume / 1e6).toFixed(1)}M`} sub="Carrier equipment through subs" icon={DollarSign} color="green" />
         <KpiCard label="Total Projects" value={data.totalProjects} sub="Carrier specs via sub channel" icon={Users} color="amber" />
@@ -172,7 +172,7 @@ export default async function ChannelPartnersPage() {
       />
 
       {/* Restricted region callouts */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
         {Object.entries(data.regionRestrictions).map(([region, counts]) => (
           <div key={region} className={`rounded-xl border p-5 ${counts.restricted > 0 ? "bg-amber-400/5 border-amber-400/20" : "bg-emerald-400/5 border-emerald-400/20"}`}>
             <div className="text-[#2A2A2F] font-medium text-sm">{region}</div>

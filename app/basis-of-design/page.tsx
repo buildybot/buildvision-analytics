@@ -77,7 +77,7 @@ export default async function BODPage() {
         <p className="text-[#6C6C71] text-sm mb-8">Which firms spec Carrier — and how often (2025)</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
         <KpiCard label="Avg Carrier BOD %" value={`${Math.round(avgCarrierBOD)}%`} sub="Across all firms & equipment types" icon={Target} color="blue" />
         <KpiCard label="Strong Relationships" value={strongFirms} sub="Firms where Carrier BOD ≥ 35%" icon={Building2} color="green" />
         <KpiCard label="Top BOD Firm" value={topFirmBOD?.firm_name?.split(" ")[0] ?? "—"} sub={`${Math.round(Number(topFirmBOD?.bod_pct ?? 0))}% BOD — ${topFirmBOD?.firm_city}`} icon={TrendingUp} color="amber" />

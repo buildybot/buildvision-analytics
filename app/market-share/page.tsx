@@ -115,7 +115,7 @@ export default async function MarketSharePage() {
         <p className="text-[#6C6C71] text-sm mb-8">Win/loss rates, displacement events, and threat analysis</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <KpiCard label="Carrier Spec Share" value={`${carrierShare}%`} sub={`${carrierRow?.total ?? 0} of ${totalAll} total specs`} icon={Target} color="blue" trend={{ value: 1.8, label: "vs prior year" }} />
         <KpiCard label="Win Rate (Decided)" value={`${winRate}%`} sub={`${carrierRow?.won ?? 0} wins, ${carrierRow?.lost ?? 0} losses`} icon={Trophy} color="green" trend={{ value: 3.1, label: "vs prior year" }} />
         <KpiCard label="Won Value" value={`$${((Number(carrierRow?.won_value ?? 0)) / 1e6).toFixed(1)}M`} sub="Total value of specs won" icon={TrendingUp} color="amber" />
@@ -146,7 +146,7 @@ export default async function MarketSharePage() {
       />
 
       {/* Threats & Opportunities */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Threats */}
         <div className="bg-[#F8F8F8] border border-[#ef4444]/20 rounded-xl p-5">
           <SectionHeader

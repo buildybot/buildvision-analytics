@@ -35,9 +35,9 @@ interface Props {
 
 export function ManufacturerOverviewCharts({ marketShare, regional }: Props) {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
       {/* Market Share by Spec Count */}
-      <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+      <div className="rounded-xl p-8" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader
           title="Spec Share by Manufacturer"
           subtitle="Total specifications across all projects"
@@ -62,7 +62,7 @@ export function ManufacturerOverviewCharts({ marketShare, regional }: Props) {
       </div>
 
       {/* Regional Performance */}
-      <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+      <div className="rounded-xl p-8" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader
           title="Regional Performance"
           subtitle="Win rate and spec volume by region"

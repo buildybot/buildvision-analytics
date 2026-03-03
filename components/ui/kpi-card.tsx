@@ -22,7 +22,7 @@ const colorMap = {
 export function KpiCard({ label, value, sub, icon: Icon, trend, color = "blue", className }: KpiCardProps) {
   const c = colorMap[color];
   return (
-    <div className={cn("bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-6 flex flex-col gap-3", className)}>
+    <div className={cn("bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-7 flex flex-col gap-4", className)}>
       <div className="flex items-center justify-between">
         <span className="text-sm" style={{ color: "var(--neutral-600)" }}>{label}</span>
         {Icon && (

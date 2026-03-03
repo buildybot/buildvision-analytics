@@ -115,14 +115,14 @@ export default async function RepDashboardPage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-6">
         <KpiCard label="Win Rate" value={`${winRate}%`} sub={`${data.won.length}W / ${data.lost.length}L in region`} icon={Trophy} color="green" />
         <KpiCard label="Pipeline Value" value={`$${(pipelineValue / 1e6).toFixed(1)}M`} sub={`${data.pending.length} pending specs`} icon={TrendingUp} color="amber" />
         <KpiCard label="Active Firms" value={data.myFirmBOD.length} sub="Northeast firms I track" icon={Building2} color="blue" />
         <KpiCard label="Sub Relationships" value={data.mySubs.length} sub="Mechanical subs in my territory" icon={Wrench} color="purple" />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* My Specs */}
         <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="My Spec Activity" subtitle="Carrier specs in Northeast" />
@@ -164,7 +164,7 @@ export default async function RepDashboardPage() {
       </div>
 
       {/* Opportunities + Subs */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
         {/* Comp threats = my opportunities */}
         <div className="bg-[#F8F8F8] border border-amber-400/20 rounded-xl p-5">
           <SectionHeader title="🎯 My Opportunities" subtitle="Northeast firms where a competitor has high BOD — your targets" />

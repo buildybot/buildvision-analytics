@@ -65,7 +65,7 @@ export default async function PricingPage() {
         <p className="text-[#6C6C71] text-sm mb-8">Carrier $/unit vs market — 2025 data</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
         <KpiCard
           label="Carrier Avg $/Ton (Chillers)"
           value={`$${Math.round(carrierAvgTon)}`}

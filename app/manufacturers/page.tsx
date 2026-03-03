@@ -35,7 +35,7 @@ export default async function ManufacturersPage() {
         <p className="text-[#6C6C71] text-sm mb-8">All 19 manufacturers tracked — revenue, spec share, BOD penetration</p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {mfgs.map((mfg, i) => {
           const decided = Number(mfg.win_count) + Number(mfg.loss_count);
           const winRate = decided > 0 ? Math.round((Number(mfg.win_count) / decided) * 100) : 0;
