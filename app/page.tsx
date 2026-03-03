@@ -89,16 +89,16 @@ export default async function OverviewPage() {
   const marketSharePct = totalSpecAll > 0 ? Math.round(((carrierRow?.count ?? 0) / totalSpecAll) * 100) : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-8">
       {/* Page Header */}
-      <div>
-        <div className="flex items-center gap-2 mb-1">
-          <div className="w-6 h-6 rounded bg-[#4A3AFF]/20 flex items-center justify-center">
-            <Globe size={14} className="text-[#4A3AFF]" />
+      <div className="pb-2">
+        <div className="flex items-center gap-3 mb-2">
+          <div className="w-8 h-8 rounded-lg bg-[#4A3AFF]/10 flex items-center justify-center">
+            <Globe size={16} className="text-[#4A3AFF]" />
           </div>
-          <h1 className="text-[#2A2A2F] text-2xl font-bold">Carrier National Dashboard</h1>
+          <h1 className="text-[#2A2A2F] text-3xl font-bold">Carrier National Dashboard</h1>
         </div>
-        <p className="text-[#6C6C71] text-sm mb-8">Full market visibility · All regions · All channels</p>
+        <p className="text-[#6C6C71] text-base ml-11">Full market visibility · All regions · All channels</p>
       </div>
 
       {/* KPI Strip */}
@@ -162,7 +162,7 @@ export default async function OverviewPage() {
       {/* Bottom Row: Top Firms + Recent Activity */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Top BOD Firms */}
-        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-6">
           <SectionHeader title="Top Specifying Firms" subtitle="Carrier BOD % (2025) — firms who spec Carrier most" />
           <div className="space-y-2">
             {data.topFirms.map((firm, i) => (
@@ -190,7 +190,7 @@ export default async function OverviewPage() {
         </div>
 
         {/* Recent Activity */}
-        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-6">
           <SectionHeader title="Recent Spec Activity" subtitle="Latest projects — Carrier specs nationwide" />
           <div className="space-y-2">
             {data.recentActivity.map((act) => (

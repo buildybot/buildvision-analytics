@@ -161,7 +161,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 overflow-auto" style={{ background: "var(--background)" }}>
+      <main className="flex-1 min-w-0 overflow-auto" style={{ background: "var(--background)" }}>
         {/* Top Bar */}
         <div className="sticky top-0 z-10 backdrop-blur-sm px-8 py-4 flex items-center gap-4"
           style={{ background: "rgba(255,255,255,0.85)", borderBottom: "1px solid var(--border)" }}>
@@ -179,7 +179,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <div className="px-8 py-6">
+        <div className="px-10 py-8 max-w-[1600px] mx-auto">
           {children}
         </div>
       </main>
