@@ -89,9 +89,9 @@ export default async function OverviewPage() {
   const marketSharePct = totalSpecAll > 0 ? Math.round(((carrierRow?.count ?? 0) / totalSpecAll) * 100) : 0;
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-12">
       {/* Page Header */}
-      <div className="pb-2">
+      <div className="pb-4">
         <div className="flex items-center gap-3 mb-2">
           <div className="w-8 h-8 rounded-lg bg-[#4A3AFF]/10 flex items-center justify-center">
             <Globe size={16} className="text-[#4A3AFF]" />
@@ -164,7 +164,7 @@ export default async function OverviewPage() {
         {/* Top BOD Firms */}
         <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-8">
           <SectionHeader title="Top Specifying Firms" subtitle="Carrier BOD % (2025) — firms who spec Carrier most" />
-          <div className="space-y-2">
+          <div className="space-y-4 mt-4">
             {data.topFirms.map((firm, i) => (
               <div key={i} className="flex items-center gap-3">
                 <div className="w-6 h-6 rounded-full bg-[#EDEDED] flex items-center justify-center text-[#6C6C71] text-xs font-mono flex-shrink-0">
@@ -192,9 +192,9 @@ export default async function OverviewPage() {
         {/* Recent Activity */}
         <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-8">
           <SectionHeader title="Recent Spec Activity" subtitle="Latest projects — Carrier specs nationwide" />
-          <div className="space-y-2">
+          <div className="space-y-1 mt-4">
             {data.recentActivity.map((act) => (
-              <div key={act.id} className="flex items-start gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
+              <div key={act.id} className="flex items-start gap-3 py-3 border-b border-[#C9CBCF] last:border-0">
                 <StatusBadge value={act.status} className="mt-0.5 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
                   <div className="text-[#2A2A2F] text-sm truncate">{act.project_name}</div>
