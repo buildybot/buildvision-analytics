@@ -109,7 +109,7 @@ export default async function MarketSharePage() {
   const winRate = decidedCarrier > 0 ? Math.round((Number(carrierRow?.won ?? 0) / decidedCarrier) * 100) : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-2xl font-bold">Market Share & Competitive Intel</h1>
         <p className="text-[#6C6C71] text-sm mb-8">Win/loss rates, displacement events, and threat analysis</p>

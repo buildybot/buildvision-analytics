@@ -130,7 +130,7 @@ export default async function ChannelPartnersPage() {
     .sort((a, b) => b.volume - a.volume);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-2xl font-bold">Channel Partners</h1>
         <p className="text-[#6C6C71] text-sm mb-8">Carrier's mechanical sub network — who buys, how much, where</p>

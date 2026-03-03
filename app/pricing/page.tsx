@@ -59,7 +59,7 @@ export default async function PricingPage() {
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-2xl font-bold">Pricing Analysis</h1>
         <p className="text-[#6C6C71] text-sm mb-8">Carrier $/unit vs market — 2025 data</p>

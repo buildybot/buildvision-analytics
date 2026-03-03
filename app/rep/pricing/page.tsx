@@ -36,7 +36,7 @@ export default async function RepPricingPage() {
     : 0;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">Local Pricing — Northeast</h1>
         <p className="text-[#6C6C71] text-sm">Carrier vs competitors · 2025 · your region</p>

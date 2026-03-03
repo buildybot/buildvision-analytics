@@ -41,7 +41,7 @@ export default async function RepPipelinePage() {
   const wonValue = won.reduce((s, w) => s + (w.value_usd ?? 0), 0);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">My Pipeline</h1>
         <p className="text-[#6C6C71] text-sm">Northeast spec activity — all statuses</p>

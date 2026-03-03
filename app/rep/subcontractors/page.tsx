@@ -50,7 +50,7 @@ export default async function RepSubcontractorsPage() {
   const totalProj = subs.reduce((s, [, d]) => s + d.totalProj, 0);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">My Subcontractors</h1>
         <p className="text-[#6C6C71] text-sm">Mechanical subs in my territory — Carrier equipment relationships</p>

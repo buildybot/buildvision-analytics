@@ -71,7 +71,7 @@ export default async function BODPage() {
   });
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-2xl font-bold">Basis of Design</h1>
         <p className="text-[#6C6C71] text-sm mb-8">Which firms spec Carrier — and how often (2025)</p>

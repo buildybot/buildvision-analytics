@@ -29,7 +29,7 @@ export default async function ManufacturersPage() {
   const totalAll = mfgs.reduce((s, m) => s + Number(m.spec_count), 0);
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-2xl font-bold">Competitive Landscape</h1>
         <p className="text-[#6C6C71] text-sm mb-8">All 19 manufacturers tracked — revenue, spec share, BOD penetration</p>

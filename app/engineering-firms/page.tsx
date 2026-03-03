@@ -37,7 +37,7 @@ export default async function EngineeringFirmsPage() {
   const atRiskCount = firms.filter(f => Number(f.top_competitor_bod ?? 0) > Number(f.carrier_bod ?? 0)).length;
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-12">
       <div>
         <h1 className="text-[#2A2A2F] text-2xl font-bold">Engineering Firms</h1>
         <p className="text-[#6C6C71] text-sm mb-8">Specifier relationships — BOD%, loyalty, and competitive position</p>
