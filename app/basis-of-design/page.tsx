@@ -71,7 +71,7 @@ export default async function BODPage() {
   });
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">Basis of Design</h1>
         <p className="text-[#6C6C71] text-sm">Which firms spec Carrier — and how often (2025)</p>
@@ -107,10 +107,10 @@ export default async function BODPage() {
                   const pct = Math.round(Number(row.bod_pct));
                   return (
                     <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
-                      <td className="py-2.5 pr-4 text-[#2A2A2F] font-medium">{row.firm_name}</td>
-                      <td className="py-2.5 pr-4 text-[#6C6C71]">{row.firm_region}</td>
-                      <td className="py-2.5 pr-4 text-[#6C6C71]">{row.eq_name}</td>
-                      <td className="py-2.5 pr-4 text-right">
+                      <td className="py-3 pr-4 text-[#2A2A2F] font-medium">{row.firm_name}</td>
+                      <td className="py-3 pr-4 text-[#6C6C71]">{row.firm_region}</td>
+                      <td className="py-3 pr-4 text-[#6C6C71]">{row.eq_name}</td>
+                      <td className="py-3 pr-4 text-right">
                         <div className="flex items-center justify-end gap-2">
                           <div className="w-20 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden">
                             <div className="h-full rounded-full" style={{ width: `${pct}%`, background: pct >= 40 ? "#16DA7C" : pct >= 25 ? "#4A3AFF" : "#f59e0b" }} />
@@ -118,7 +118,7 @@ export default async function BODPage() {
                           <span className={`font-mono text-sm ${pct >= 40 ? "text-emerald-400" : pct >= 25 ? "text-[#4A3AFF]" : "text-amber-400"}`}>{pct}%</span>
                         </div>
                       </td>
-                      <td className="py-2.5 text-right text-[#6C6C71]">{row.project_count}</td>
+                      <td className="py-3 text-right text-[#6C6C71]">{row.project_count}</td>
                     </tr>
                   );
                 })}

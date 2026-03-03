@@ -130,7 +130,7 @@ export default async function ChannelPartnersPage() {
     .sort((a, b) => b.volume - a.volume);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">Channel Partners</h1>
         <p className="text-[#6C6C71] text-sm">Carrier's mechanical sub network — who buys, how much, where</p>
@@ -138,7 +138,7 @@ export default async function ChannelPartnersPage() {
 
       {/* Permission summary banner */}
       {data.restrictedCount > 0 && (
-        <div className="bg-amber-400/5 border border-amber-400/20 rounded-xl p-4">
+        <div className="bg-amber-400/5 border border-amber-400/20 rounded-xl p-5">
           <div className="flex items-start gap-3">
             <Lock size={16} className="text-amber-400 mt-0.5 flex-shrink-0" />
             <div>
@@ -172,9 +172,9 @@ export default async function ChannelPartnersPage() {
       />
 
       {/* Restricted region callouts */}
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-4">
         {Object.entries(data.regionRestrictions).map(([region, counts]) => (
-          <div key={region} className={`rounded-xl border p-4 ${counts.restricted > 0 ? "bg-amber-400/5 border-amber-400/20" : "bg-emerald-400/5 border-emerald-400/20"}`}>
+          <div key={region} className={`rounded-xl border p-5 ${counts.restricted > 0 ? "bg-amber-400/5 border-amber-400/20" : "bg-emerald-400/5 border-emerald-400/20"}`}>
             <div className="text-[#2A2A2F] font-medium text-sm">{region}</div>
             <div className={`text-xs mt-1 ${counts.restricted > 0 ? "text-amber-400" : "text-emerald-400"}`}>
               {counts.restricted > 0 ? `${counts.restricted}/${counts.total} reps restricted` : "Full visibility"}
@@ -208,13 +208,13 @@ export default async function ChannelPartnersPage() {
             <tbody>
               {data.aggregated.map((sub, i) => (
                 <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
-                  <td className="py-2.5 pr-4 text-[#2A2A2F] font-medium">{sub.sub_name}</td>
-                  <td className="py-2.5 pr-4 text-[#6C6C71]">{sub.sub_region}</td>
-                  <td className="py-2.5 pr-4"><StatusBadge value={sub.specialty} /></td>
-                  <td className="py-2.5 pr-4"><StatusBadge value={sub.primary_strength} /></td>
-                  <td className="py-2.5 pr-4 text-right font-mono text-[#2A2A2F]">${(sub.total_volume / 1e6).toFixed(2)}M</td>
-                  <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">{sub.total_projects}</td>
-                  <td className="py-2.5 text-[#6C6C71] text-xs">{sub.reps.join(", ")}</td>
+                  <td className="py-3 pr-4 text-[#2A2A2F] font-medium">{sub.sub_name}</td>
+                  <td className="py-3 pr-4 text-[#6C6C71]">{sub.sub_region}</td>
+                  <td className="py-3 pr-4"><StatusBadge value={sub.specialty} /></td>
+                  <td className="py-3 pr-4"><StatusBadge value={sub.primary_strength} /></td>
+                  <td className="py-3 pr-4 text-right font-mono text-[#2A2A2F]">${(sub.total_volume / 1e6).toFixed(2)}M</td>
+                  <td className="py-3 pr-4 text-right font-mono text-[#6C6C71]">{sub.total_projects}</td>
+                  <td className="py-3 text-[#6C6C71] text-xs">{sub.reps.join(", ")}</td>
                 </tr>
               ))}
             </tbody>

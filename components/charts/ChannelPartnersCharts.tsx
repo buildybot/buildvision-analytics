@@ -26,7 +26,7 @@ export function ChannelPartnersCharts({ bySpecialty, byRegion }: {
 }) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-      <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+      <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader title="Volume by Specialty" subtitle="Annual Carrier equipment volume by sub trade" />
         <ResponsiveContainer width="100%" height={220}>
           <PieChart>
@@ -43,7 +43,7 @@ export function ChannelPartnersCharts({ bySpecialty, byRegion }: {
         </ResponsiveContainer>
       </div>
 
-      <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+      <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader title="Volume by Region" subtitle="Where Carrier sub network is strongest" />
         <ResponsiveContainer width="100%" height={220}>
           <BarChart data={byRegion} margin={{ top: 8 }}>

@@ -41,7 +41,7 @@ export default async function RepPipelinePage() {
   const wonValue = won.reduce((s, w) => s + (w.value_usd ?? 0), 0);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">My Pipeline</h1>
         <p className="text-[#6C6C71] text-sm">Northeast spec activity — all statuses</p>
@@ -94,12 +94,12 @@ export default async function RepPipelinePage() {
             <tbody>
               {[...won, ...lost].sort((a, b) => b.date.localeCompare(a.date)).map(s => (
                 <tr key={s.id} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
-                  <td className="py-2.5 pr-4"><StatusBadge value={s.status} /></td>
-                  <td className="py-2.5 pr-4 text-[#2A2A2F] font-medium">{s.project_name}</td>
-                  <td className="py-2.5 pr-4 text-[#6C6C71]">{s.firm_name}</td>
-                  <td className="py-2.5 pr-4 text-[#6C6C71] text-xs">{s.eq_name?.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</td>
-                  <td className="py-2.5 pr-4 text-right font-mono text-[#2A2A2F]">${((s.value_usd ?? 0) / 1000).toFixed(0)}K</td>
-                  <td className="py-2.5 text-right text-[#6C6C71] font-mono text-xs">{s.date}</td>
+                  <td className="py-3 pr-4"><StatusBadge value={s.status} /></td>
+                  <td className="py-3 pr-4 text-[#2A2A2F] font-medium">{s.project_name}</td>
+                  <td className="py-3 pr-4 text-[#6C6C71]">{s.firm_name}</td>
+                  <td className="py-3 pr-4 text-[#6C6C71] text-xs">{s.eq_name?.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</td>
+                  <td className="py-3 pr-4 text-right font-mono text-[#2A2A2F]">${((s.value_usd ?? 0) / 1000).toFixed(0)}K</td>
+                  <td className="py-3 text-right text-[#6C6C71] font-mono text-xs">{s.date}</td>
                 </tr>
               ))}
             </tbody>

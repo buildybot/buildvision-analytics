@@ -13,7 +13,7 @@ function heatColor(pct: number): { bg: string; color: string } {
 
 export function BODHeatmap({ data, mfgs }: { data: { firm: string; region: string; [mfg: string]: any }[]; mfgs: string[] }) {
   return (
-    <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+    <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
       <SectionHeader
         title="BOD % Matrix — Firm × Manufacturer"
         subtitle="Avg basis of design % across all equipment types (2025). Darker = stronger relationship."

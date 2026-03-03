@@ -78,7 +78,7 @@ export function PricingCharts({ chillerData, ahuData, allData }: {
     <div className="space-y-6">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Chiller $/ton */}
-        <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+        <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
           <SectionHeader title="Chiller $/Ton by Manufacturer" subtitle="National avg 2025 — lower is more competitive" />
           <ResponsiveContainer width="100%" height={260}>
             <BarChart data={chillerChartData} layout="vertical" margin={{ left: 8, right: 48 }}>
@@ -102,7 +102,7 @@ export function PricingCharts({ chillerData, ahuData, allData }: {
         </div>
 
         {/* AHU $/CFM */}
-        <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+        <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
           <SectionHeader title="AHU $/CFM by Manufacturer" subtitle="National avg 2025" />
           <ResponsiveContainer width="100%" height={260}>
             <BarChart data={ahuChartData} layout="vertical" margin={{ left: 8, right: 48 }}>
@@ -123,7 +123,7 @@ export function PricingCharts({ chillerData, ahuData, allData }: {
       </div>
 
       {/* Carrier price trend */}
-      <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+      <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader title="Carrier Chiller Pricing Trend ($/Ton)" subtitle="Year-over-year national average" />
         <ResponsiveContainer width="100%" height={160}>
           <BarChart data={trendData} margin={{ left: 0, right: 16 }}>

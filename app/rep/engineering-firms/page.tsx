@@ -76,7 +76,7 @@ export default async function RepEngineeringFirmsPage() {
   const strongCount = firms.filter(f => f.avgBOD >= 30).length;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">My Engineering Firms</h1>
         <p className="text-[#6C6C71] text-sm">Carrier BOD at my Northeast accounts — 2025</p>

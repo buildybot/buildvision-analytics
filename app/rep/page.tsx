@@ -104,7 +104,7 @@ export default async function RepDashboardPage() {
   const pipelineValue = data.pending.reduce((s, s2) => s + (s2.value_usd ?? 0), 0);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div className="flex items-start gap-4">
         <div className="w-10 h-10 rounded-full bg-[#4A3AFF]/20 border border-[#4A3AFF]/40 flex items-center justify-center flex-shrink-0">
           <User size={18} className="text-[#4A3AFF]" />

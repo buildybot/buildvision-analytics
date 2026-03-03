@@ -20,7 +20,7 @@ export default async function RepSettingsPage() {
   const { rep, perms } = await getPermissions();
 
   return (
-    <div className="space-y-8 max-w-2xl">
+    <div className="space-y-6 max-w-2xl">
       <div className="flex items-start gap-3">
         <div className="w-8 h-8 rounded-lg bg-[#4A3AFF]/20 flex items-center justify-center flex-shrink-0">
           <Shield size={16} className="text-[#4A3AFF]" />
@@ -31,7 +31,7 @@ export default async function RepSettingsPage() {
         </div>
       </div>
 
-      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-4">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
         <div className="flex items-center gap-3">
           <div className="w-9 h-9 rounded-full bg-[#4A3AFF]/20 flex items-center justify-center text-[#4A3AFF] font-bold text-sm">MC</div>
           <div>

@@ -89,7 +89,7 @@ export default async function OverviewPage() {
   const marketSharePct = totalSpecAll > 0 ? Math.round(((carrierRow?.count ?? 0) / totalSpecAll) * 100) : 0;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       {/* Page Header */}
       <div>
         <div className="flex items-center gap-2 mb-1">

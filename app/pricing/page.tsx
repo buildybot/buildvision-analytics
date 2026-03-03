@@ -59,7 +59,7 @@ export default async function PricingPage() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">Pricing Analysis</h1>
         <p className="text-[#6C6C71] text-sm">Carrier $/unit vs market — 2025 data</p>
@@ -118,18 +118,18 @@ export default async function PricingPage() {
                 const isCarrier = row.manufacturer_name === "Carrier";
                 return (
                   <tr key={i} className={`border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : ""}`}>
-                    <td className={`py-2.5 pr-4 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
+                    <td className={`py-3 pr-4 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
                       {row.manufacturer_name}
                     </td>
-                    <td className="py-2.5 pr-4 text-[#6C6C71]">{row.equipment_type_name}</td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-[#2A2A2F]">
+                    <td className="py-3 pr-4 text-[#6C6C71]">{row.equipment_type_name}</td>
+                    <td className="py-3 pr-4 text-right font-mono text-[#2A2A2F]">
                       ${Math.round(Number(row.avg_price_per_unit)).toLocaleString()}
                     </td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">
+                    <td className="py-3 pr-4 text-right font-mono text-[#6C6C71]">
                       ${Math.round(Number(row.avg_total)).toLocaleString()}
                     </td>
-                    <td className="py-2.5 pr-4 text-[#6C6C71]">/{row.size_unit}</td>
-                    <td className="py-2.5 text-[#6C6C71]">{row.region}</td>
+                    <td className="py-3 pr-4 text-[#6C6C71]">/{row.size_unit}</td>
+                    <td className="py-3 text-[#6C6C71]">{row.region}</td>
                   </tr>
                 );
               })}

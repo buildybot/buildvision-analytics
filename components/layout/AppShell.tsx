@@ -134,7 +134,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
               <Link
                 key={href}
                 href={href}
-                className="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all group"
+                className="flex items-center gap-3 px-4 py-3 rounded-lg text-sm transition-all group"
                 style={isActive
                   ? { background: "rgba(74,58,255,0.08)", color: "var(--primary)", fontWeight: 500 }
                   : { color: "var(--neutral-600)" }
@@ -163,7 +163,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
       {/* Main Content */}
       <main className="flex-1 overflow-auto" style={{ background: "var(--background)" }}>
         {/* Top Bar */}
-        <div className="sticky top-0 z-10 backdrop-blur-sm px-6 py-3 flex items-center gap-4"
+        <div className="sticky top-0 z-10 backdrop-blur-sm px-8 py-4 flex items-center gap-4"
           style={{ background: "rgba(255,255,255,0.85)", borderBottom: "1px solid var(--border)" }}>
           <div className="flex-1">
             <div className="font-semibold text-sm" style={{ color: "var(--foreground)" }}>
@@ -179,7 +179,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
           </div>
         </div>
 
-        <div className="p-6">
+        <div className="px-8 py-6">
           {children}
         </div>
       </main>

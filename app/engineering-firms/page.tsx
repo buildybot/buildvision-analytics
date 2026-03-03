@@ -37,7 +37,7 @@ export default async function EngineeringFirmsPage() {
   const atRiskCount = firms.filter(f => Number(f.top_competitor_bod ?? 0) > Number(f.carrier_bod ?? 0)).length;
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <div>
         <h1 className="text-[#2A2A2F] text-xl font-bold">Engineering Firms</h1>
         <p className="text-[#6C6C71] text-sm">Specifier relationships — BOD%, loyalty, and competitive position</p>
@@ -75,15 +75,15 @@ export default async function EngineeringFirmsPage() {
                 const isAtRisk = compBod > bod;
                 return (
                   <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
-                    <td className="py-2.5 pr-4">
+                    <td className="py-3 pr-4">
                       <div className="flex items-center gap-2">
                         {isAtRisk && <span className="text-red-400 text-xs">⚠</span>}
                         <span className="text-[#2A2A2F] font-medium">{firm.name}</span>
                       </div>
                     </td>
-                    <td className="py-2.5 pr-4 text-[#6C6C71]">{firm.city}, {firm.state}</td>
-                    <td className="py-2.5 pr-4 text-[#6C6C71] text-xs">{firm.region}</td>
-                    <td className="py-2.5 pr-4">
+                    <td className="py-3 pr-4 text-[#6C6C71]">{firm.city}, {firm.state}</td>
+                    <td className="py-3 pr-4 text-[#6C6C71] text-xs">{firm.region}</td>
+                    <td className="py-3 pr-4">
                       <div className="flex items-center justify-end gap-2">
                         <div className="w-14 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden">
                           <div className="h-full rounded-full" style={{ width: `${bod}%`, background: bod >= 35 ? "#16DA7C" : bod >= 20 ? "#4A3AFF" : "#f59e0b" }} />
@@ -91,7 +91,7 @@ export default async function EngineeringFirmsPage() {
                         <span className={`font-mono text-xs font-semibold ${bod >= 35 ? "text-emerald-400" : bod >= 20 ? "text-[#4A3AFF]" : "text-amber-400"}`}>{bod}%</span>
                       </div>
                     </td>
-                    <td className="py-2.5 pr-4">
+                    <td className="py-3 pr-4">
                       {firm.top_competitor_name ? (
                         <div>
                           <span className="text-[#6C6C71] text-xs">{firm.top_competitor_name?.replace(" Technologies", "").replace(" Applied", "")}</span>
@@ -99,9 +99,9 @@ export default async function EngineeringFirmsPage() {
                         </div>
                       ) : <span className="text-[#AEB0B7]">—</span>}
                     </td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">{Number(firm.total_projects)}</td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-emerald-400">{Number(firm.carrier_wins)}</td>
-                    <td className="py-2.5 text-right font-mono text-red-400">{Number(firm.carrier_losses)}</td>
+                    <td className="py-3 pr-4 text-right font-mono text-[#6C6C71]">{Number(firm.total_projects)}</td>
+                    <td className="py-3 pr-4 text-right font-mono text-emerald-400">{Number(firm.carrier_wins)}</td>
+                    <td className="py-3 text-right font-mono text-red-400">{Number(firm.carrier_losses)}</td>
                   </tr>
                 );
               })}

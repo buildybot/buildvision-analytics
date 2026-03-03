@@ -55,7 +55,7 @@ export function MarketShareCharts({ byMfg, byRegion, byEqType }: Props) {
     <div className="space-y-6">
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Pie: spec share */}
-        <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+        <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
           <SectionHeader title="Spec Share" subtitle="All manufacturers" />
           <ResponsiveContainer width="100%" height={220}>
             <PieChart>
@@ -78,7 +78,7 @@ export function MarketShareCharts({ byMfg, byRegion, byEqType }: Props) {
         </div>
 
         {/* Bar: win rate comparison */}
-        <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+        <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
           <SectionHeader title="Win Rate by Manufacturer" subtitle="Decided specs only" />
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={winRateData} layout="vertical" margin={{ left: 4, right: 32 }}>
@@ -97,7 +97,7 @@ export function MarketShareCharts({ byMfg, byRegion, byEqType }: Props) {
         </div>
 
         {/* Bar: regional win rate */}
-        <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+        <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
           <SectionHeader title="Carrier Win Rate by Region" subtitle="Where we're strongest" />
           <ResponsiveContainer width="100%" height={220}>
             <BarChart data={byRegion} margin={{ top: 8 }}>
@@ -113,7 +113,7 @@ export function MarketShareCharts({ byMfg, byRegion, byEqType }: Props) {
       </div>
 
       {/* Equipment type win rate */}
-      <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
+      <div className="rounded-xl p-6" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader title="Carrier Performance by Equipment Category" subtitle="Specs and win rate — where Carrier is strongest and weakest" />
         <ResponsiveContainer width="100%" height={200}>
           <BarChart data={byEqType} margin={{ left: 0, right: 16, top: 8 }}>
