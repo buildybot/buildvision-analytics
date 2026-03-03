@@ -96,13 +96,13 @@ export default async function OverviewPage() {
           <div className="w-6 h-6 rounded bg-[#4A3AFF]/20 flex items-center justify-center">
             <Globe size={14} className="text-[#4A3AFF]" />
           </div>
-          <h1 className="text-[#2A2A2F] text-xl font-bold">Carrier National Dashboard</h1>
+          <h1 className="text-[#2A2A2F] text-2xl font-bold">Carrier National Dashboard</h1>
         </div>
-        <p className="text-[#6C6C71] text-sm">Full market visibility · All regions · All channels</p>
+        <p className="text-[#6C6C71] text-sm mb-8">Full market visibility · All regions · All channels</p>
       </div>
 
       {/* KPI Strip */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <KpiCard
           label="Spec Win Rate"
           value={`${winRate}%`}
@@ -136,7 +136,7 @@ export default async function OverviewPage() {
       </div>
 
       {/* Second row */}
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <KpiCard label="Manufacturers Tracked" value={data.totalMfgs.count} icon={Building2} color="blue" sub="Including Carrier" />
         <KpiCard label="Engineering Firms" value={data.totalFirms.count} icon={Users} color="purple" sub="Active specifiers" />
         <KpiCard label="Channel Partners" value={data.totalSubs.count} icon={Wrench} color="amber" sub="Mechanical subs tracked" />

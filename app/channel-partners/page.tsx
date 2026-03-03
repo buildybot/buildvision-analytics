@@ -132,8 +132,8 @@ export default async function ChannelPartnersPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-[#2A2A2F] text-xl font-bold">Channel Partners</h1>
-        <p className="text-[#6C6C71] text-sm">Carrier's mechanical sub network — who buys, how much, where</p>
+        <h1 className="text-[#2A2A2F] text-2xl font-bold">Channel Partners</h1>
+        <p className="text-[#6C6C71] text-sm mb-8">Carrier's mechanical sub network — who buys, how much, where</p>
       </div>
 
       {/* Permission summary banner */}
@@ -159,7 +159,7 @@ export default async function ChannelPartnersPage() {
         </div>
       )}
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <KpiCard label="Visible Sub Relationships" value={data.aggregated.length} sub={`From ${data.visibleCount} sharing reps`} icon={Wrench} color="blue" />
         <KpiCard label="Total Annual Volume" value={`$${(data.totalVolume / 1e6).toFixed(1)}M`} sub="Carrier equipment through subs" icon={DollarSign} color="green" />
         <KpiCard label="Total Projects" value={data.totalProjects} sub="Carrier specs via sub channel" icon={Users} color="amber" />
@@ -195,26 +195,26 @@ export default async function ChannelPartnersPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#C9CBCF]">
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Subcontractor</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Region</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Specialty</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Strength</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Annual Volume</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Projects</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3">Reps</th>
+              <tr className="border-b border-[#EDEDED] bg-[#F8F8F8]">
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Subcontractor</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Region</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Specialty</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Strength</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Annual Volume</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Projects</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Reps</th>
               </tr>
             </thead>
             <tbody>
               {data.aggregated.map((sub, i) => (
-                <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
-                  <td className="py-3 pr-4 text-[#2A2A2F] font-medium">{sub.sub_name}</td>
-                  <td className="py-3 pr-4 text-[#6C6C71]">{sub.sub_region}</td>
-                  <td className="py-3 pr-4"><StatusBadge value={sub.specialty} /></td>
-                  <td className="py-3 pr-4"><StatusBadge value={sub.primary_strength} /></td>
-                  <td className="py-3 pr-4 text-right font-mono text-[#2A2A2F]">${(sub.total_volume / 1e6).toFixed(2)}M</td>
-                  <td className="py-3 pr-4 text-right font-mono text-[#6C6C71]">{sub.total_projects}</td>
-                  <td className="py-3 text-[#6C6C71] text-xs">{sub.reps.join(", ")}</td>
+                <tr key={i} className={`border-b border-[#EDEDED] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${i % 2 === 1 ? "bg-[#F8F8F8]" : ""}`}>
+                  <td className="px-5 py-3.5 text-[#2A2A2F] font-medium">{sub.sub_name}</td>
+                  <td className="px-5 py-3.5 text-[#6C6C71]">{sub.sub_region}</td>
+                  <td className="px-5 py-3.5"><StatusBadge value={sub.specialty} /></td>
+                  <td className="px-5 py-3.5"><StatusBadge value={sub.primary_strength} /></td>
+                  <td className="px-5 py-3.5 text-right font-mono text-[#2A2A2F]">${(sub.total_volume / 1e6).toFixed(2)}M</td>
+                  <td className="px-5 py-3.5 text-right font-mono text-[#6C6C71]">{sub.total_projects}</td>
+                  <td className="px-5 py-3.5 text-[#6C6C71] text-xs">{sub.reps.join(", ")}</td>
                 </tr>
               ))}
             </tbody>

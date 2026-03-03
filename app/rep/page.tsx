@@ -110,12 +110,12 @@ export default async function RepDashboardPage() {
           <User size={18} className="text-[#4A3AFF]" />
         </div>
         <div>
-          <h1 className="text-[#2A2A2F] text-xl font-bold">Marcus Chen — Northeast</h1>
-          <p className="text-[#6C6C71] text-sm">Carrier rep · New York, NY · Territory dashboard</p>
+          <h1 className="text-[#2A2A2F] text-2xl font-bold">Marcus Chen — Northeast</h1>
+          <p className="text-[#6C6C71] text-sm mb-2">Carrier rep · New York, NY · Territory dashboard</p>
         </div>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
         <KpiCard label="Win Rate" value={`${winRate}%`} sub={`${data.won.length}W / ${data.lost.length}L in region`} icon={Trophy} color="green" />
         <KpiCard label="Pipeline Value" value={`$${(pipelineValue / 1e6).toFixed(1)}M`} sub={`${data.pending.length} pending specs`} icon={TrendingUp} color="amber" />
         <KpiCard label="Active Firms" value={data.myFirmBOD.length} sub="Northeast firms I track" icon={Building2} color="blue" />

@@ -61,11 +61,11 @@ export default async function PricingPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-[#2A2A2F] text-xl font-bold">Pricing Analysis</h1>
-        <p className="text-[#6C6C71] text-sm">Carrier $/unit vs market — 2025 data</p>
+        <h1 className="text-[#2A2A2F] text-2xl font-bold">Pricing Analysis</h1>
+        <p className="text-[#6C6C71] text-sm mb-8">Carrier $/unit vs market — 2025 data</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <KpiCard
           label="Carrier Avg $/Ton (Chillers)"
           value={`$${Math.round(carrierAvgTon)}`}
@@ -104,32 +104,32 @@ export default async function PricingPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#C9CBCF]">
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Manufacturer</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Equipment</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Avg $/Unit</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Avg Total</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Unit</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3">Region</th>
+              <tr className="border-b border-[#EDEDED] bg-[#F8F8F8]">
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Manufacturer</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Equipment</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Avg $/Unit</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Avg Total</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Unit</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Region</th>
               </tr>
             </thead>
             <tbody>
               {allData.slice(0, 60).map((row, i) => {
                 const isCarrier = row.manufacturer_name === "Carrier";
                 return (
-                  <tr key={i} className={`border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : ""}`}>
-                    <td className={`py-3 pr-4 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
+                  <tr key={i} className={`border-b border-[#EDEDED] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : i % 2 === 1 ? "bg-[#F8F8F8]" : ""}`}>
+                    <td className={`px-5 py-3.5 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
                       {row.manufacturer_name}
                     </td>
-                    <td className="py-3 pr-4 text-[#6C6C71]">{row.equipment_type_name}</td>
-                    <td className="py-3 pr-4 text-right font-mono text-[#2A2A2F]">
+                    <td className="px-5 py-3.5 text-[#6C6C71]">{row.equipment_type_name}</td>
+                    <td className="px-5 py-3.5 text-right font-mono text-[#2A2A2F]">
                       ${Math.round(Number(row.avg_price_per_unit)).toLocaleString()}
                     </td>
-                    <td className="py-3 pr-4 text-right font-mono text-[#6C6C71]">
+                    <td className="px-5 py-3.5 text-right font-mono text-[#6C6C71]">
                       ${Math.round(Number(row.avg_total)).toLocaleString()}
                     </td>
-                    <td className="py-3 pr-4 text-[#6C6C71]">/{row.size_unit}</td>
-                    <td className="py-3 text-[#6C6C71]">{row.region}</td>
+                    <td className="px-5 py-3.5 text-[#6C6C71]">/{row.size_unit}</td>
+                    <td className="px-5 py-3.5 text-[#6C6C71]">{row.region}</td>
                   </tr>
                 );
               })}

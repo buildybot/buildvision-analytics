@@ -73,11 +73,11 @@ export default async function BODPage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-[#2A2A2F] text-xl font-bold">Basis of Design</h1>
-        <p className="text-[#6C6C71] text-sm">Which firms spec Carrier — and how often (2025)</p>
+        <h1 className="text-[#2A2A2F] text-2xl font-bold">Basis of Design</h1>
+        <p className="text-[#6C6C71] text-sm mb-8">Which firms spec Carrier — and how often (2025)</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
         <KpiCard label="Avg Carrier BOD %" value={`${Math.round(avgCarrierBOD)}%`} sub="Across all firms & equipment types" icon={Target} color="blue" />
         <KpiCard label="Strong Relationships" value={strongFirms} sub="Firms where Carrier BOD ≥ 35%" icon={Building2} color="green" />
         <KpiCard label="Top BOD Firm" value={topFirmBOD?.firm_name?.split(" ")[0] ?? "—"} sub={`${Math.round(Number(topFirmBOD?.bod_pct ?? 0))}% BOD — ${topFirmBOD?.firm_city}`} icon={TrendingUp} color="amber" />
@@ -91,12 +91,12 @@ export default async function BODPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#C9CBCF]">
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Engineering Firm</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Region</th>
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Equipment</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Carrier BOD%</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3">Projects</th>
+              <tr className="border-b border-[#EDEDED] bg-[#F8F8F8]">
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Engineering Firm</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Region</th>
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Equipment</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Carrier BOD%</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Projects</th>
               </tr>
             </thead>
             <tbody>
@@ -106,11 +106,11 @@ export default async function BODPage() {
                 .map((row, i) => {
                   const pct = Math.round(Number(row.bod_pct));
                   return (
-                    <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
-                      <td className="py-3 pr-4 text-[#2A2A2F] font-medium">{row.firm_name}</td>
-                      <td className="py-3 pr-4 text-[#6C6C71]">{row.firm_region}</td>
-                      <td className="py-3 pr-4 text-[#6C6C71]">{row.eq_name}</td>
-                      <td className="py-3 pr-4 text-right">
+                    <tr key={i} className={`border-b border-[#EDEDED] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${i % 2 === 1 ? "bg-[#F8F8F8]" : ""}`}>
+                      <td className="px-5 py-3.5 text-[#2A2A2F] font-medium">{row.firm_name}</td>
+                      <td className="px-5 py-3.5 text-[#6C6C71]">{row.firm_region}</td>
+                      <td className="px-5 py-3.5 text-[#6C6C71]">{row.eq_name}</td>
+                      <td className="px-5 py-3.5 text-right">
                         <div className="flex items-center justify-end gap-2">
                           <div className="w-20 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden">
                             <div className="h-full rounded-full" style={{ width: `${pct}%`, background: pct >= 40 ? "#16DA7C" : pct >= 25 ? "#4A3AFF" : "#f59e0b" }} />
@@ -118,7 +118,7 @@ export default async function BODPage() {
                           <span className={`font-mono text-sm ${pct >= 40 ? "text-emerald-400" : pct >= 25 ? "text-[#4A3AFF]" : "text-amber-400"}`}>{pct}%</span>
                         </div>
                       </td>
-                      <td className="py-3 text-right text-[#6C6C71]">{row.project_count}</td>
+                      <td className="px-5 py-3.5 text-right text-[#6C6C71]">{row.project_count}</td>
                     </tr>
                   );
                 })}

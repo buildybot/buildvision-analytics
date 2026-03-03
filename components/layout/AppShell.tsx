@@ -127,7 +127,7 @@ function AppShellInner({ children }: { children: React.ReactNode }) {
         )}
 
         {/* Nav */}
-        <nav className="flex-1 p-3 space-y-0.5 overflow-y-auto mt-2">
+        <nav className="flex-1 p-3 space-y-1 overflow-y-auto mt-2">
           {nav.map(({ href, icon: Icon, label }) => {
             const isActive = href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
             return (

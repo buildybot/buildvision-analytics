@@ -111,11 +111,11 @@ export default async function MarketSharePage() {
   return (
     <div className="space-y-6">
       <div>
-        <h1 className="text-[#2A2A2F] text-xl font-bold">Market Share & Competitive Intel</h1>
-        <p className="text-[#6C6C71] text-sm">Win/loss rates, displacement events, and threat analysis</p>
+        <h1 className="text-[#2A2A2F] text-2xl font-bold">Market Share & Competitive Intel</h1>
+        <p className="text-[#6C6C71] text-sm mb-8">Win/loss rates, displacement events, and threat analysis</p>
       </div>
 
-      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
         <KpiCard label="Carrier Spec Share" value={`${carrierShare}%`} sub={`${carrierRow?.total ?? 0} of ${totalAll} total specs`} icon={Target} color="blue" trend={{ value: 1.8, label: "vs prior year" }} />
         <KpiCard label="Win Rate (Decided)" value={`${winRate}%`} sub={`${carrierRow?.won ?? 0} wins, ${carrierRow?.lost ?? 0} losses`} icon={Trophy} color="green" trend={{ value: 3.1, label: "vs prior year" }} />
         <KpiCard label="Won Value" value={`$${((Number(carrierRow?.won_value ?? 0)) / 1e6).toFixed(1)}M`} sub="Total value of specs won" icon={TrendingUp} color="amber" />
@@ -214,13 +214,13 @@ export default async function MarketSharePage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#C9CBCF]">
-                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Manufacturer</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Total Specs</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Wins</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Losses</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Win Rate</th>
-                <th className="text-right text-[#6C6C71] font-medium pb-3">Won Value</th>
+              <tr className="border-b border-[#EDEDED] bg-[#F8F8F8]">
+                <th className="text-left text-[#6C6C71] font-medium px-5 py-3">Manufacturer</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Total Specs</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Wins</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Losses</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Win Rate</th>
+                <th className="text-right text-[#6C6C71] font-medium px-5 py-3">Won Value</th>
               </tr>
             </thead>
             <tbody>
@@ -229,14 +229,14 @@ export default async function MarketSharePage() {
                 const wr = decided > 0 ? Math.round((Number(row.won) / decided) * 100) : 0;
                 const isCarrier = row.mfg_name === "Carrier";
                 return (
-                  <tr key={i} className={`border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : ""}`}>
-                    <td className={`py-3 pr-4 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
+                  <tr key={i} className={`border-b border-[#EDEDED] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : i % 2 === 1 ? "bg-[#F8F8F8]" : ""}`}>
+                    <td className={`px-5 py-3.5 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
                       {isCarrier && <span className="mr-1">●</span>}{row.mfg_name}
                     </td>
-                    <td className="py-3 pr-4 text-right font-mono text-[#6C6C71]">{Number(row.total).toLocaleString()}</td>
-                    <td className="py-3 pr-4 text-right font-mono text-emerald-400">{Number(row.won).toLocaleString()}</td>
-                    <td className="py-3 pr-4 text-right font-mono text-red-400">{Number(row.lost).toLocaleString()}</td>
-                    <td className="py-3 pr-4 text-right">
+                    <td className="px-5 py-3.5 text-right font-mono text-[#6C6C71]">{Number(row.total).toLocaleString()}</td>
+                    <td className="px-5 py-3.5 text-right font-mono text-emerald-400">{Number(row.won).toLocaleString()}</td>
+                    <td className="px-5 py-3.5 text-right font-mono text-red-400">{Number(row.lost).toLocaleString()}</td>
+                    <td className="px-5 py-3.5 text-right">
                       <div className="flex items-center justify-end gap-2">
                         <div className="w-12 h-1 bg-[#EDEDED] rounded-full overflow-hidden">
                           <div className="h-full rounded-full bg-[#4A3AFF]" style={{ width: `${wr}%` }} />
@@ -244,7 +244,7 @@ export default async function MarketSharePage() {
                         <span className="font-mono text-[#2A2A2F] text-xs">{wr}%</span>
                       </div>
                     </td>
-                    <td className="py-3 text-right font-mono text-[#2A2A2F]">${((Number(row.won_value)) / 1e6).toFixed(1)}M</td>
+                    <td className="px-5 py-3.5 text-right font-mono text-[#2A2A2F]">${((Number(row.won_value)) / 1e6).toFixed(1)}M</td>
                   </tr>
                 );
               })}
