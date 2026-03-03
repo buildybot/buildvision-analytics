@@ -12,39 +12,36 @@ interface KpiCardProps {
 }
 
 const colorMap = {
-  blue: { icon: "text-[#0066ff]", bg: "bg-[#0066ff]/10", border: "border-[#0066ff]/20" },
-  green: { icon: "text-emerald-400", bg: "bg-emerald-400/10", border: "border-emerald-400/20" },
-  amber: { icon: "text-amber-400", bg: "bg-amber-400/10", border: "border-amber-400/20" },
-  red: { icon: "text-red-400", bg: "bg-red-400/10", border: "border-red-400/20" },
-  purple: { icon: "text-purple-400", bg: "bg-purple-400/10", border: "border-purple-400/20" },
+  blue:   { icon: "#4A3AFF", bg: "rgba(74,58,255,0.08)",   border: "rgba(74,58,255,0.2)" },
+  green:  { icon: "#16DA7C", bg: "rgba(22,218,124,0.10)",  border: "rgba(22,218,124,0.25)" },
+  amber:  { icon: "#FFCC17", bg: "rgba(255,204,23,0.12)",  border: "rgba(255,204,23,0.3)" },
+  red:    { icon: "#EC4343", bg: "rgba(236,67,67,0.10)",   border: "rgba(236,67,67,0.25)" },
+  purple: { icon: "#CC98F6", bg: "rgba(204,152,246,0.10)", border: "rgba(204,152,246,0.25)" },
 };
 
 export function KpiCard({ label, value, sub, icon: Icon, trend, color = "blue", className }: KpiCardProps) {
   const c = colorMap[color];
   return (
-    <div className={cn(
-      "bg-[#111827] border border-[#1f2937] rounded-xl p-5 flex flex-col gap-3",
-      className
-    )}>
+    <div className={cn("rounded-xl p-5 flex flex-col gap-3", className)}
+      style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
       <div className="flex items-center justify-between">
-        <span className="text-[#9ca3af] text-sm">{label}</span>
+        <span className="text-sm" style={{ color: "var(--neutral-600)" }}>{label}</span>
         {Icon && (
-          <div className={cn("w-8 h-8 rounded-lg flex items-center justify-center", c.bg, "border", c.border)}>
-            <Icon size={16} className={c.icon} />
+          <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0"
+            style={{ background: c.bg, border: `1px solid ${c.border}` }}>
+            <Icon size={16} style={{ color: c.icon }} />
           </div>
         )}
       </div>
       <div>
-        <div className="text-white text-2xl font-bold tracking-tight">{value}</div>
-        {sub && <div className="text-[#6b7280] text-xs mt-1">{sub}</div>}
+        <div className="text-2xl font-bold tracking-tight" style={{ color: "var(--foreground)" }}>{value}</div>
+        {sub && <div className="text-xs mt-1" style={{ color: "var(--neutral-600)" }}>{sub}</div>}
       </div>
       {trend && (
-        <div className={cn(
-          "text-xs font-medium flex items-center gap-1",
-          trend.value >= 0 ? "text-emerald-400" : "text-red-400"
-        )}>
+        <div className="text-xs font-medium flex items-center gap-1"
+          style={{ color: trend.value >= 0 ? "#16DA7C" : "#EC4343" }}>
           <span>{trend.value >= 0 ? "↑" : "↓"} {Math.abs(trend.value)}%</span>
-          <span className="text-[#6b7280] font-normal">{trend.label}</span>
+          <span className="font-normal" style={{ color: "var(--neutral-600)" }}>{trend.label}</span>
         </div>
       )}
     </div>

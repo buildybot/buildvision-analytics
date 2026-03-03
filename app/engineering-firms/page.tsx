@@ -39,8 +39,8 @@ export default async function EngineeringFirmsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">Engineering Firms</h1>
-        <p className="text-[#6b7280] text-sm">Specifier relationships — BOD%, loyalty, and competitive position</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">Engineering Firms</h1>
+        <p className="text-[#6C6C71] text-sm">Specifier relationships — BOD%, loyalty, and competitive position</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -49,7 +49,7 @@ export default async function EngineeringFirmsPage() {
         <KpiCard label="At-Risk Firms" value={atRiskCount} sub="Competitor leads Carrier BOD" icon={Users} color="red" />
       </div>
 
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
         <SectionHeader
           title="All Engineering Firms"
           subtitle="Carrier BOD%, competitive threat, and project history"
@@ -57,15 +57,15 @@ export default async function EngineeringFirmsPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#1f2937]">
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Firm</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Location</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Region</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Carrier BOD%</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Top Competitor</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Projects</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">W</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3">L</th>
+              <tr className="border-b border-[#C9CBCF]">
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Firm</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Location</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Region</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Carrier BOD%</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Top Competitor</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Projects</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">W</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3">L</th>
               </tr>
             </thead>
             <tbody>
@@ -74,32 +74,32 @@ export default async function EngineeringFirmsPage() {
                 const compBod = Math.round(Number(firm.top_competitor_bod ?? 0));
                 const isAtRisk = compBod > bod;
                 return (
-                  <tr key={i} className="border-b border-[#1f2937] last:border-0 hover:bg-[#1f2937]/50 transition-colors">
+                  <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
                     <td className="py-2.5 pr-4">
                       <div className="flex items-center gap-2">
                         {isAtRisk && <span className="text-red-400 text-xs">⚠</span>}
-                        <span className="text-white font-medium">{firm.name}</span>
+                        <span className="text-[#2A2A2F] font-medium">{firm.name}</span>
                       </div>
                     </td>
-                    <td className="py-2.5 pr-4 text-[#9ca3af]">{firm.city}, {firm.state}</td>
-                    <td className="py-2.5 pr-4 text-[#6b7280] text-xs">{firm.region}</td>
+                    <td className="py-2.5 pr-4 text-[#6C6C71]">{firm.city}, {firm.state}</td>
+                    <td className="py-2.5 pr-4 text-[#6C6C71] text-xs">{firm.region}</td>
                     <td className="py-2.5 pr-4">
                       <div className="flex items-center justify-end gap-2">
-                        <div className="w-14 h-1.5 bg-[#1f2937] rounded-full overflow-hidden">
-                          <div className="h-full rounded-full" style={{ width: `${bod}%`, background: bod >= 35 ? "#10b981" : bod >= 20 ? "#0066ff" : "#f59e0b" }} />
+                        <div className="w-14 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden">
+                          <div className="h-full rounded-full" style={{ width: `${bod}%`, background: bod >= 35 ? "#16DA7C" : bod >= 20 ? "#4A3AFF" : "#f59e0b" }} />
                         </div>
-                        <span className={`font-mono text-xs font-semibold ${bod >= 35 ? "text-emerald-400" : bod >= 20 ? "text-[#0066ff]" : "text-amber-400"}`}>{bod}%</span>
+                        <span className={`font-mono text-xs font-semibold ${bod >= 35 ? "text-emerald-400" : bod >= 20 ? "text-[#4A3AFF]" : "text-amber-400"}`}>{bod}%</span>
                       </div>
                     </td>
                     <td className="py-2.5 pr-4">
                       {firm.top_competitor_name ? (
                         <div>
-                          <span className="text-[#9ca3af] text-xs">{firm.top_competitor_name?.replace(" Technologies", "").replace(" Applied", "")}</span>
-                          <span className={`ml-2 font-mono text-xs ${isAtRisk ? "text-red-400" : "text-[#6b7280]"}`}>{compBod}%</span>
+                          <span className="text-[#6C6C71] text-xs">{firm.top_competitor_name?.replace(" Technologies", "").replace(" Applied", "")}</span>
+                          <span className={`ml-2 font-mono text-xs ${isAtRisk ? "text-red-400" : "text-[#6C6C71]"}`}>{compBod}%</span>
                         </div>
-                      ) : <span className="text-[#4b5563]">—</span>}
+                      ) : <span className="text-[#AEB0B7]">—</span>}
                     </td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-[#9ca3af]">{Number(firm.total_projects)}</td>
+                    <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">{Number(firm.total_projects)}</td>
                     <td className="py-2.5 pr-4 text-right font-mono text-emerald-400">{Number(firm.carrier_wins)}</td>
                     <td className="py-2.5 text-right font-mono text-red-400">{Number(firm.carrier_losses)}</td>
                   </tr>

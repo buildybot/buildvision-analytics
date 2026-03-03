@@ -38,8 +38,8 @@ export default async function RepPricingPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">Local Pricing — Northeast</h1>
-        <p className="text-[#6b7280] text-sm">Carrier vs competitors · 2025 · your region</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">Local Pricing — Northeast</h1>
+        <p className="text-[#6C6C71] text-sm">Carrier vs competitors · 2025 · your region</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
@@ -54,11 +54,11 @@ export default async function RepPricingPage() {
         const unit = eqRows[0]?.size_unit ?? "";
 
         return (
-          <div key={eqType} className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+          <div key={eqType} className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
             <div className="flex items-center justify-between mb-4">
               <div>
-                <div className="text-white font-semibold">{eqType}</div>
-                <div className="text-[#6b7280] text-xs">Northeast 2025 — avg $/{unit}</div>
+                <div className="text-[#2A2A2F] font-semibold">{eqType}</div>
+                <div className="text-[#6C6C71] text-xs">Northeast 2025 — avg $/{unit}</div>
               </div>
               {carrierRow && lowest && (
                 <div className={`text-xs font-medium px-2 py-1 rounded ${carrierRow.mfg_name === lowest.mfg_name ? "text-emerald-400 bg-emerald-400/10" : "text-amber-400 bg-amber-400/10"}`}>
@@ -73,13 +73,13 @@ export default async function RepPricingPage() {
                 const pct = maxPPU > 0 ? (Number(row.avg_ppu) / maxPPU) * 100 : 0;
                 return (
                   <div key={i} className="flex items-center gap-3">
-                    <div className={`text-xs w-32 truncate flex-shrink-0 ${isCarrier ? "text-[#0066ff] font-semibold" : "text-[#9ca3af]"}`}>
+                    <div className={`text-xs w-32 truncate flex-shrink-0 ${isCarrier ? "text-[#4A3AFF] font-semibold" : "text-[#6C6C71]"}`}>
                       {row.mfg_name.replace(" Technologies", "").replace(" Applied", "").replace(" Commercial", "")}
                     </div>
-                    <div className="flex-1 h-2 bg-[#1f2937] rounded-full overflow-hidden">
-                      <div className="h-full rounded-full" style={{ width: `${pct}%`, background: isCarrier ? "#0066ff" : i === 0 ? "#10b981" : "#374151" }} />
+                    <div className="flex-1 h-2 bg-[#EDEDED] rounded-full overflow-hidden">
+                      <div className="h-full rounded-full" style={{ width: `${pct}%`, background: isCarrier ? "#4A3AFF" : i === 0 ? "#16DA7C" : "#C9CBCF" }} />
                     </div>
-                    <span className={`text-xs font-mono w-16 text-right font-semibold ${isCarrier ? "text-[#0066ff]" : i === 0 ? "text-emerald-400" : "text-[#9ca3af]"}`}>
+                    <span className={`text-xs font-mono w-16 text-right font-semibold ${isCarrier ? "text-[#4A3AFF]" : i === 0 ? "text-emerald-400" : "text-[#6C6C71]"}`}>
                       ${Math.round(Number(row.avg_ppu)).toLocaleString()}/{unit}
                     </span>
                   </div>

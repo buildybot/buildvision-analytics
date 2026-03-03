@@ -52,8 +52,8 @@ export default async function RepSubcontractorsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">My Subcontractors</h1>
-        <p className="text-[#6b7280] text-sm">Mechanical subs in my territory — Carrier equipment relationships</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">My Subcontractors</h1>
+        <p className="text-[#6C6C71] text-sm">Mechanical subs in my territory — Carrier equipment relationships</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
@@ -64,11 +64,11 @@ export default async function RepSubcontractorsPage() {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {subs.map(([name, data], i) => (
-          <div key={i} className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+          <div key={i} className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
             <div className="flex items-start justify-between mb-3">
               <div>
-                <div className="text-white font-semibold text-sm">{name}</div>
-                <div className="text-[#6b7280] text-xs mt-0.5">{data.city}, {data.state}</div>
+                <div className="text-[#2A2A2F] font-semibold text-sm">{name}</div>
+                <div className="text-[#6C6C71] text-xs mt-0.5">{data.city}, {data.state}</div>
               </div>
               <StatusBadge value={data.strength} />
             </div>
@@ -78,16 +78,16 @@ export default async function RepSubcontractorsPage() {
             </div>
             <div className="grid grid-cols-2 gap-3 text-center">
               <div>
-                <div className="text-white font-bold">${(data.totalVol / 1e6).toFixed(2)}M</div>
-                <div className="text-[#6b7280] text-xs">Annual Vol</div>
+                <div className="text-[#2A2A2F] font-bold">${(data.totalVol / 1e6).toFixed(2)}M</div>
+                <div className="text-[#6C6C71] text-xs">Annual Vol</div>
               </div>
               <div>
-                <div className="text-white font-bold">{data.totalProj}</div>
-                <div className="text-[#6b7280] text-xs">Projects</div>
+                <div className="text-[#2A2A2F] font-bold">{data.totalProj}</div>
+                <div className="text-[#6C6C71] text-xs">Projects</div>
               </div>
             </div>
             {data.eqTypes.length > 0 && (
-              <div className="mt-3 pt-3 border-t border-[#1f2937] text-[#6b7280] text-xs">
+              <div className="mt-3 pt-3 border-t border-[#C9CBCF] text-[#6C6C71] text-xs">
                 {data.eqTypes.slice(0, 3).join(" · ")}
               </div>
             )}

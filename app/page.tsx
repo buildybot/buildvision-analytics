@@ -93,12 +93,12 @@ export default async function OverviewPage() {
       {/* Page Header */}
       <div>
         <div className="flex items-center gap-2 mb-1">
-          <div className="w-6 h-6 rounded bg-[#0066ff]/20 flex items-center justify-center">
-            <Globe size={14} className="text-[#0066ff]" />
+          <div className="w-6 h-6 rounded bg-[#4A3AFF]/20 flex items-center justify-center">
+            <Globe size={14} className="text-[#4A3AFF]" />
           </div>
-          <h1 className="text-white text-xl font-bold">Carrier National Dashboard</h1>
+          <h1 className="text-[#2A2A2F] text-xl font-bold">Carrier National Dashboard</h1>
         </div>
-        <p className="text-[#6b7280] text-sm">Full market visibility · All regions · All channels</p>
+        <p className="text-[#6C6C71] text-sm">Full market visibility · All regions · All channels</p>
       </div>
 
       {/* KPI Strip */}
@@ -162,25 +162,25 @@ export default async function OverviewPage() {
       {/* Bottom Row: Top Firms + Recent Activity */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Top BOD Firms */}
-        <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="Top Specifying Firms" subtitle="Carrier BOD % (2025) — firms who spec Carrier most" />
           <div className="space-y-2">
             {data.topFirms.map((firm, i) => (
               <div key={i} className="flex items-center gap-3">
-                <div className="w-6 h-6 rounded-full bg-[#1f2937] flex items-center justify-center text-[#6b7280] text-xs font-mono flex-shrink-0">
+                <div className="w-6 h-6 rounded-full bg-[#EDEDED] flex items-center justify-center text-[#6C6C71] text-xs font-mono flex-shrink-0">
                   {i + 1}
                 </div>
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm font-medium truncate">{firm.name}</div>
-                  <div className="text-[#6b7280] text-xs">{firm.city}, {firm.state} · {firm.region}</div>
+                  <div className="text-[#2A2A2F] text-sm font-medium truncate">{firm.name}</div>
+                  <div className="text-[#6C6C71] text-xs">{firm.city}, {firm.state} · {firm.region}</div>
                 </div>
                 <div className="text-right flex-shrink-0">
-                  <div className="text-white text-sm font-semibold">{Math.round(Number(firm.bod_pct))}%</div>
-                  <div className="text-[#6b7280] text-xs">{firm.projects} projects</div>
+                  <div className="text-[#2A2A2F] text-sm font-semibold">{Math.round(Number(firm.bod_pct))}%</div>
+                  <div className="text-[#6C6C71] text-xs">{firm.projects} projects</div>
                 </div>
-                <div className="w-16 h-1.5 bg-[#1f2937] rounded-full overflow-hidden flex-shrink-0">
+                <div className="w-16 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden flex-shrink-0">
                   <div
-                    className="h-full bg-[#0066ff] rounded-full"
+                    className="h-full bg-[#4A3AFF] rounded-full"
                     style={{ width: `${Math.min(100, Math.round(Number(firm.bod_pct)))}%` }}
                   />
                 </div>
@@ -190,17 +190,17 @@ export default async function OverviewPage() {
         </div>
 
         {/* Recent Activity */}
-        <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="Recent Spec Activity" subtitle="Latest projects — Carrier specs nationwide" />
           <div className="space-y-2">
             {data.recentActivity.map((act) => (
-              <div key={act.id} className="flex items-start gap-3 py-1.5 border-b border-[#1f2937] last:border-0">
+              <div key={act.id} className="flex items-start gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
                 <StatusBadge value={act.status} className="mt-0.5 flex-shrink-0" />
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm truncate">{act.project_name}</div>
-                  <div className="text-[#6b7280] text-xs">{act.firm_name} · {act.city} · {act.date}</div>
+                  <div className="text-[#2A2A2F] text-sm truncate">{act.project_name}</div>
+                  <div className="text-[#6C6C71] text-xs">{act.firm_name} · {act.city} · {act.date}</div>
                 </div>
-                <div className="text-white text-sm font-mono flex-shrink-0">
+                <div className="text-[#2A2A2F] text-sm font-mono flex-shrink-0">
                   ${((act.value_usd ?? 0) / 1000).toFixed(0)}K
                 </div>
               </div>

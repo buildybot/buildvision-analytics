@@ -31,8 +31,8 @@ export default async function ManufacturersPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">Competitive Landscape</h1>
-        <p className="text-[#6b7280] text-sm">All 19 manufacturers tracked — revenue, spec share, BOD penetration</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">Competitive Landscape</h1>
+        <p className="text-[#6C6C71] text-sm">All 19 manufacturers tracked — revenue, spec share, BOD penetration</p>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -43,33 +43,33 @@ export default async function ManufacturersPage() {
           const isCarrier = mfg.id === CARRIER_ID;
 
           return (
-            <div key={i} className={`bg-[#111827] border rounded-xl p-5 ${isCarrier ? "border-[#0066ff]/40" : "border-[#1f2937]"}`}>
+            <div key={i} className={`bg-[#F8F8F8] border rounded-xl p-5 ${isCarrier ? "border-[#4A3AFF]/40" : "border-[#C9CBCF]"}`}>
               <div className="flex items-start justify-between mb-3">
                 <div>
-                  <div className={`font-semibold text-sm ${isCarrier ? "text-[#0066ff]" : "text-white"}`}>
+                  <div className={`font-semibold text-sm ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
                     {isCarrier && "● "}{mfg.name}
                   </div>
-                  <div className="text-[#6b7280] text-xs mt-0.5">{mfg.hq_city}, {mfg.hq_state}</div>
+                  <div className="text-[#6C6C71] text-xs mt-0.5">{mfg.hq_city}, {mfg.hq_state}</div>
                 </div>
                 {mfg.annual_revenue && (
-                  <div className="text-[#9ca3af] text-xs font-mono">${(mfg.annual_revenue / 1000).toFixed(1)}B</div>
+                  <div className="text-[#6C6C71] text-xs font-mono">${(mfg.annual_revenue / 1000).toFixed(1)}B</div>
                 )}
               </div>
               <div className="grid grid-cols-3 gap-3 text-center">
                 <div>
-                  <div className="text-white font-bold text-lg">{shareOfSpecs}%</div>
-                  <div className="text-[#6b7280] text-xs">Spec Share</div>
+                  <div className="text-[#2A2A2F] font-bold text-lg">{shareOfSpecs}%</div>
+                  <div className="text-[#6C6C71] text-xs">Spec Share</div>
                 </div>
                 <div>
                   <div className={`font-bold text-lg ${winRate >= 50 ? "text-emerald-400" : winRate >= 35 ? "text-amber-400" : "text-red-400"}`}>{winRate}%</div>
-                  <div className="text-[#6b7280] text-xs">Win Rate</div>
+                  <div className="text-[#6C6C71] text-xs">Win Rate</div>
                 </div>
                 <div>
-                  <div className="text-white font-bold text-lg">{Math.round(Number(mfg.avg_bod ?? 0))}%</div>
-                  <div className="text-[#6b7280] text-xs">Avg BOD%</div>
+                  <div className="text-[#2A2A2F] font-bold text-lg">{Math.round(Number(mfg.avg_bod ?? 0))}%</div>
+                  <div className="text-[#6C6C71] text-xs">Avg BOD%</div>
                 </div>
               </div>
-              <div className="mt-3 pt-3 border-t border-[#1f2937] flex justify-between text-xs text-[#6b7280]">
+              <div className="mt-3 pt-3 border-t border-[#C9CBCF] flex justify-between text-xs text-[#6C6C71]">
                 <span>{Number(mfg.spec_count)} specs</span>
                 <span className="text-emerald-400">{Number(mfg.win_count)}W</span>
                 <span className="text-red-400">{Number(mfg.loss_count)}L</span>

@@ -61,8 +61,8 @@ export default async function PricingPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">Pricing Analysis</h1>
-        <p className="text-[#6b7280] text-sm">Carrier $/unit vs market — 2025 data</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">Pricing Analysis</h1>
+        <p className="text-[#6C6C71] text-sm">Carrier $/unit vs market — 2025 data</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -99,37 +99,37 @@ export default async function PricingPage() {
       <PricingCharts chillerData={chillerData} ahuData={ahuData} allData={allData} />
 
       {/* Detailed Table */}
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
         <SectionHeader title="Pricing Benchmarks — All Equipment Types (2025)" subtitle="Avg $/unit across all regions" />
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#1f2937]">
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Manufacturer</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Equipment</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Avg $/Unit</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Avg Total</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Unit</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3">Region</th>
+              <tr className="border-b border-[#C9CBCF]">
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Manufacturer</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Equipment</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Avg $/Unit</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Avg Total</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Unit</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3">Region</th>
               </tr>
             </thead>
             <tbody>
               {allData.slice(0, 60).map((row, i) => {
                 const isCarrier = row.manufacturer_name === "Carrier";
                 return (
-                  <tr key={i} className={`border-b border-[#1f2937] last:border-0 hover:bg-[#1f2937]/50 transition-colors ${isCarrier ? "bg-[#0066ff]/5" : ""}`}>
-                    <td className={`py-2.5 pr-4 font-medium ${isCarrier ? "text-[#0066ff]" : "text-white"}`}>
+                  <tr key={i} className={`border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : ""}`}>
+                    <td className={`py-2.5 pr-4 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
                       {row.manufacturer_name}
                     </td>
-                    <td className="py-2.5 pr-4 text-[#9ca3af]">{row.equipment_type_name}</td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-white">
+                    <td className="py-2.5 pr-4 text-[#6C6C71]">{row.equipment_type_name}</td>
+                    <td className="py-2.5 pr-4 text-right font-mono text-[#2A2A2F]">
                       ${Math.round(Number(row.avg_price_per_unit)).toLocaleString()}
                     </td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-[#9ca3af]">
+                    <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">
                       ${Math.round(Number(row.avg_total)).toLocaleString()}
                     </td>
-                    <td className="py-2.5 pr-4 text-[#6b7280]">/{row.size_unit}</td>
-                    <td className="py-2.5 text-[#6b7280]">{row.region}</td>
+                    <td className="py-2.5 pr-4 text-[#6C6C71]">/{row.size_unit}</td>
+                    <td className="py-2.5 text-[#6C6C71]">{row.region}</td>
                   </tr>
                 );
               })}

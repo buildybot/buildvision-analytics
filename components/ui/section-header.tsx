@@ -11,8 +11,8 @@ export function SectionHeader({ title, subtitle, action, className }: SectionHea
   return (
     <div className={cn("flex items-start justify-between mb-4", className)}>
       <div>
-        <h2 className="text-white font-semibold text-base">{title}</h2>
-        {subtitle && <p className="text-[#6b7280] text-sm mt-0.5">{subtitle}</p>}
+        <h2 className="font-semibold text-base" style={{ color: "var(--foreground)" }}>{title}</h2>
+        {subtitle && <p className="text-sm mt-0.5" style={{ color: "var(--neutral-600)" }}>{subtitle}</p>}
       </div>
       {action && <div>{action}</div>}
     </div>

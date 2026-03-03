@@ -1,25 +1,60 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --background: #0a0e1a;
-  --foreground: #e8eaf0;
-  --card: #111827;
-  --card-foreground: #e8eaf0;
-  --primary: #0066ff;
-  --primary-foreground: #ffffff;
-  --secondary: #1e2535;
-  --secondary-foreground: #9ca3af;
-  --muted: #1e2535;
-  --muted-foreground: #6b7280;
-  --accent: #1d4ed8;
-  --accent-foreground: #ffffff;
-  --destructive: #ef4444;
-  --border: #1f2937;
-  --input: #1f2937;
-  --ring: #0066ff;
-  --radius: 0.5rem;
-  --sidebar-bg: #080c18;
-  --sidebar-border: #1f2937;
+  /* BV Color System */
+  --bv-blue-300: #7383FF;
+  --bv-blue-400: #4A3AFF;
+  --bv-blue-500: #3F31DE;
+
+  --bv-green-100: #B2FFDA;
+  --bv-green-400: #16DA7C;
+
+  --bv-red-100: #FFDADA;
+  --bv-red-400: #EC4343;
+
+  --bv-yellow-100: #FFECAA;
+  --bv-yellow-400: #FFCC17;
+
+  --bv-purple-400: #CC98F6;
+
+  --neutral-50:  #F8F8F8;
+  --neutral-100: #EDEDED;
+  --neutral-200: #C9CBCF;
+  --neutral-300: #AEB0B7;
+  --neutral-600: #6C6C71;
+  --neutral-800: #2A2A2F;
+
+  /* Semantic tokens */
+  --background:          #FFFFFF;
+  --foreground:          #2A2A2F;
+  --card:                #F8F8F8;
+  --card-foreground:     #2A2A2F;
+  --primary:             #4A3AFF;
+  --primary-hover:       #7383FF;
+  --primary-pressed:     #3F31DE;
+  --primary-foreground:  #FFFFFF;
+  --secondary:           #EDEDED;
+  --secondary-foreground:#2A2A2F;
+  --muted:               #F8F8F8;
+  --muted-foreground:    #AEB0B7;
+  --accent:              #4A3AFF;
+  --accent-foreground:   #FFFFFF;
+  --destructive:         #EC4343;
+  --border:              #C9CBCF;
+  --input:               #EDEDED;
+  --ring:                #4A3AFF;
+  --radius:              0.5rem;
+  --sidebar-bg:          #F8F8F8;
+  --sidebar-border:      #C9CBCF;
+
+  /* Success / Error / Warning */
+  --success:             #16DA7C;
+  --success-bg:          #B2FFDA;
+  --error:               #EC4343;
+  --error-bg:            #FFDADA;
+  --warning:             #FFCC17;
+  --warning-bg:          #FFECAA;
 }
 
 * {
@@ -31,14 +66,16 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+  line-height: 22px;
 }
 
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar-track { background: var(--card); }
-::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+::-webkit-scrollbar-track { background: var(--neutral-100); }
+::-webkit-scrollbar-thumb { background: var(--neutral-200); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--neutral-300); }

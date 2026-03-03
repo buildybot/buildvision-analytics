@@ -110,9 +110,9 @@ export function PermissionsPanel({ repId, manufacturerId, initialPerms }: Props)
   return (
     <div className="space-y-4">
       {/* Summary */}
-      <div className="flex items-center justify-between py-3 px-4 bg-[#0066ff]/5 border border-[#0066ff]/20 rounded-lg">
-        <div className="text-sm text-[#9ca3af]">
-          Sharing <span className="text-white font-semibold">{sharedCount}</span> of 6 data types with Carrier national
+      <div className="flex items-center justify-between py-3 px-4 bg-[#4A3AFF]/5 border border-[#4A3AFF]/20 rounded-lg">
+        <div className="text-sm text-[#6C6C71]">
+          Sharing <span className="text-[#2A2A2F] font-semibold">{sharedCount}</span> of 6 data types with Carrier national
         </div>
         {saved && (
           <div className="flex items-center gap-1.5 text-emerald-400 text-sm">
@@ -120,22 +120,22 @@ export function PermissionsPanel({ repId, manufacturerId, initialPerms }: Props)
             <span>Saved</span>
           </div>
         )}
-        {saving && <div className="text-[#6b7280] text-sm">Saving...</div>}
+        {saving && <div className="text-[#6C6C71] text-sm">Saving...</div>}
       </div>
 
       {/* Permission Toggles */}
       {PERMISSION_CONFIG.map(({ key, icon: Icon, title, description, impact, riskLevel }) => {
         const isOn = perms[key] ?? false;
         return (
-          <div key={key} className={`bg-[#111827] border rounded-xl p-5 transition-all ${isOn ? "border-[#1f2937]" : "border-[#374151] opacity-80"}`}>
+          <div key={key} className={`bg-[#F8F8F8] border rounded-xl p-5 transition-all ${isOn ? "border-[#C9CBCF]" : "border-[#C9CBCF] opacity-80"}`}>
             <div className="flex items-start gap-4">
-              <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${isOn ? "bg-[#0066ff]/20" : "bg-[#1f2937]"}`}>
-                <Icon size={18} className={isOn ? "text-[#0066ff]" : "text-[#6b7280]"} />
+              <div className={`w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0 ${isOn ? "bg-[#4A3AFF]/20" : "bg-[#EDEDED]"}`}>
+                <Icon size={18} className={isOn ? "text-[#4A3AFF]" : "text-[#6C6C71]"} />
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between gap-4">
                   <div className="flex items-center gap-2">
-                    <span className="text-white font-medium">{title}</span>
+                    <span className="text-[#2A2A2F] font-medium">{title}</span>
                     <span className={`text-xs px-2 py-0.5 rounded font-medium ${RISK_COLORS[riskLevel]}`}>
                       {riskLevel} sensitivity
                     </span>
@@ -143,13 +143,13 @@ export function PermissionsPanel({ repId, manufacturerId, initialPerms }: Props)
                   {/* Toggle */}
                   <button
                     onClick={() => toggle(key)}
-                    className={`relative flex-shrink-0 w-11 h-6 rounded-full transition-colors ${isOn ? "bg-[#0066ff]" : "bg-[#374151]"}`}
+                    className={`relative flex-shrink-0 w-11 h-6 rounded-full transition-colors ${isOn ? "bg-[#4A3AFF]" : "bg-[#C9CBCF]"}`}
                   >
                     <div className={`absolute top-1 w-4 h-4 rounded-full bg-white transition-transform ${isOn ? "translate-x-6" : "translate-x-1"}`} />
                   </button>
                 </div>
-                <p className="text-[#9ca3af] text-sm mt-1">{description}</p>
-                <div className={`mt-2 text-xs flex items-start gap-1.5 ${isOn ? "text-[#6b7280]" : "text-[#4b5563]"}`}>
+                <p className="text-[#6C6C71] text-sm mt-1">{description}</p>
+                <div className={`mt-2 text-xs flex items-start gap-1.5 ${isOn ? "text-[#6C6C71]" : "text-[#AEB0B7]"}`}>
                   {isOn ? <Unlock size={11} className="mt-0.5 flex-shrink-0" /> : <Lock size={11} className="mt-0.5 flex-shrink-0" />}
                   <span>{isOn ? impact : "This data is hidden from Carrier national. Shows as 'Restricted'."}</span>
                 </div>
@@ -159,7 +159,7 @@ export function PermissionsPanel({ repId, manufacturerId, initialPerms }: Props)
         );
       })}
 
-      <div className="text-[#4b5563] text-xs text-center pt-2">
+      <div className="text-[#AEB0B7] text-xs text-center pt-2">
         Changes take effect immediately. Your data is never shared without your explicit consent.
       </div>
     </div>

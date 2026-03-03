@@ -111,8 +111,8 @@ export default async function MarketSharePage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">Market Share & Competitive Intel</h1>
-        <p className="text-[#6b7280] text-sm">Win/loss rates, displacement events, and threat analysis</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">Market Share & Competitive Intel</h1>
+        <p className="text-[#6C6C71] text-sm">Win/loss rates, displacement events, and threat analysis</p>
       </div>
 
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
@@ -148,21 +148,21 @@ export default async function MarketSharePage() {
       {/* Threats & Opportunities */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Threats */}
-        <div className="bg-[#111827] border border-[#ef4444]/20 rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#ef4444]/20 rounded-xl p-5">
           <SectionHeader
             title="⚠ Competitive Threats"
             subtitle="Firms where a competitor holds >35% BOD — Carrier at risk"
           />
           <div className="space-y-2">
             {data.bodThreats.map((t, i) => (
-              <div key={i} className="flex items-center gap-3 py-1.5 border-b border-[#1f2937] last:border-0">
+              <div key={i} className="flex items-center gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm font-medium">{t.firm_name}</div>
-                  <div className="text-[#6b7280] text-xs">{t.firm_region} · {t.year}</div>
+                  <div className="text-[#2A2A2F] text-sm font-medium">{t.firm_name}</div>
+                  <div className="text-[#6C6C71] text-xs">{t.firm_region} · {t.year}</div>
                 </div>
                 <div className="text-right flex-shrink-0">
                   <div className="text-red-400 text-sm font-semibold">{Math.round(Number(t.avg_bod))}% BOD</div>
-                  <div className="text-[#9ca3af] text-xs truncate max-w-[120px]">{t.mfg_name.replace(" Technologies", "").replace(" Applied", "")}</div>
+                  <div className="text-[#6C6C71] text-xs truncate max-w-[120px]">{t.mfg_name.replace(" Technologies", "").replace(" Applied", "")}</div>
                 </div>
               </div>
             ))}
@@ -170,15 +170,15 @@ export default async function MarketSharePage() {
         </div>
 
         {/* Recent Losses */}
-        <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="Recent Losses" subtitle="Carrier specs that went to a competitor" />
           <div className="space-y-2">
             {data.displacements.map((d, i) => (
-              <div key={i} className="flex items-start gap-3 py-1.5 border-b border-[#1f2937] last:border-0">
+              <div key={i} className="flex items-start gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
                 <StatusBadge value="lost" className="flex-shrink-0 mt-0.5" />
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm truncate">{d.project_name}</div>
-                  <div className="text-[#6b7280] text-xs">{d.firm_name} · {d.city} · {d.date}</div>
+                  <div className="text-[#2A2A2F] text-sm truncate">{d.project_name}</div>
+                  <div className="text-[#6C6C71] text-xs">{d.firm_name} · {d.city} · {d.date}</div>
                 </div>
                 <div className="text-red-400 text-sm font-mono flex-shrink-0">
                   ${((d.value_usd ?? 0) / 1000).toFixed(0)}K
@@ -190,15 +190,15 @@ export default async function MarketSharePage() {
       </div>
 
       {/* Recent Wins */}
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
         <SectionHeader title="✓ Recent Carrier Wins" subtitle="Specs where Carrier captured the business" />
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
           {data.wins.map((w, i) => (
             <div key={i} className="flex items-start gap-3 p-3 bg-emerald-500/5 border border-emerald-500/10 rounded-lg">
               <StatusBadge value="won" className="flex-shrink-0 mt-0.5" />
               <div className="flex-1 min-w-0">
-                <div className="text-white text-sm font-medium truncate">{w.project_name}</div>
-                <div className="text-[#6b7280] text-xs">{w.firm_name} · {w.city} · {w.eq_name?.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</div>
+                <div className="text-[#2A2A2F] text-sm font-medium truncate">{w.project_name}</div>
+                <div className="text-[#6C6C71] text-xs">{w.firm_name} · {w.city} · {w.eq_name?.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</div>
               </div>
               <div className="text-emerald-400 text-sm font-mono flex-shrink-0">
                 ${((w.value_usd ?? 0) / 1000).toFixed(0)}K
@@ -209,18 +209,18 @@ export default async function MarketSharePage() {
       </div>
 
       {/* Full competitive table */}
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
         <SectionHeader title="Full Competitive Landscape" subtitle="All manufacturers — spec count, win rate, won value" />
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#1f2937]">
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Manufacturer</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Total Specs</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Wins</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Losses</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Win Rate</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3">Won Value</th>
+              <tr className="border-b border-[#C9CBCF]">
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Manufacturer</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Total Specs</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Wins</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Losses</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Win Rate</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3">Won Value</th>
               </tr>
             </thead>
             <tbody>
@@ -229,22 +229,22 @@ export default async function MarketSharePage() {
                 const wr = decided > 0 ? Math.round((Number(row.won) / decided) * 100) : 0;
                 const isCarrier = row.mfg_name === "Carrier";
                 return (
-                  <tr key={i} className={`border-b border-[#1f2937] last:border-0 hover:bg-[#1f2937]/50 transition-colors ${isCarrier ? "bg-[#0066ff]/5" : ""}`}>
-                    <td className={`py-2.5 pr-4 font-medium ${isCarrier ? "text-[#0066ff]" : "text-white"}`}>
+                  <tr key={i} className={`border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors ${isCarrier ? "bg-[#4A3AFF]/5" : ""}`}>
+                    <td className={`py-2.5 pr-4 font-medium ${isCarrier ? "text-[#4A3AFF]" : "text-[#2A2A2F]"}`}>
                       {isCarrier && <span className="mr-1">●</span>}{row.mfg_name}
                     </td>
-                    <td className="py-2.5 pr-4 text-right font-mono text-[#9ca3af]">{Number(row.total).toLocaleString()}</td>
+                    <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">{Number(row.total).toLocaleString()}</td>
                     <td className="py-2.5 pr-4 text-right font-mono text-emerald-400">{Number(row.won).toLocaleString()}</td>
                     <td className="py-2.5 pr-4 text-right font-mono text-red-400">{Number(row.lost).toLocaleString()}</td>
                     <td className="py-2.5 pr-4 text-right">
                       <div className="flex items-center justify-end gap-2">
-                        <div className="w-12 h-1 bg-[#1f2937] rounded-full overflow-hidden">
-                          <div className="h-full rounded-full bg-[#0066ff]" style={{ width: `${wr}%` }} />
+                        <div className="w-12 h-1 bg-[#EDEDED] rounded-full overflow-hidden">
+                          <div className="h-full rounded-full bg-[#4A3AFF]" style={{ width: `${wr}%` }} />
                         </div>
-                        <span className="font-mono text-white text-xs">{wr}%</span>
+                        <span className="font-mono text-[#2A2A2F] text-xs">{wr}%</span>
                       </div>
                     </td>
-                    <td className="py-2.5 text-right font-mono text-white">${((Number(row.won_value)) / 1e6).toFixed(1)}M</td>
+                    <td className="py-2.5 text-right font-mono text-[#2A2A2F]">${((Number(row.won_value)) / 1e6).toFixed(1)}M</td>
                   </tr>
                 );
               })}

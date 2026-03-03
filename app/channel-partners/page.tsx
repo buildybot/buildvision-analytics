@@ -132,8 +132,8 @@ export default async function ChannelPartnersPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">Channel Partners</h1>
-        <p className="text-[#6b7280] text-sm">Carrier's mechanical sub network — who buys, how much, where</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">Channel Partners</h1>
+        <p className="text-[#6C6C71] text-sm">Carrier's mechanical sub network — who buys, how much, where</p>
       </div>
 
       {/* Permission summary banner */}
@@ -143,9 +143,9 @@ export default async function ChannelPartnersPage() {
             <Lock size={16} className="text-amber-400 mt-0.5 flex-shrink-0" />
             <div>
               <div className="text-amber-400 font-medium text-sm">Partial data visibility</div>
-              <div className="text-[#9ca3af] text-sm mt-1">
+              <div className="text-[#6C6C71] text-sm mt-1">
                 {data.restrictedCount} of {data.visibleCount + data.restrictedCount} reps have restricted subcontractor sharing.
-                The data below reflects <strong className="text-white">{data.visibleCount} reps</strong> who have shared.
+                The data below reflects <strong className="text-[#2A2A2F]">{data.visibleCount} reps</strong> who have shared.
                 {Object.entries(data.regionRestrictions).map(([region, counts]) =>
                   counts.restricted > 0 ? (
                     <span key={region} className="ml-2 text-amber-400/80">
@@ -175,19 +175,19 @@ export default async function ChannelPartnersPage() {
       <div className="grid grid-cols-1 lg:grid-cols-5 gap-3">
         {Object.entries(data.regionRestrictions).map(([region, counts]) => (
           <div key={region} className={`rounded-xl border p-4 ${counts.restricted > 0 ? "bg-amber-400/5 border-amber-400/20" : "bg-emerald-400/5 border-emerald-400/20"}`}>
-            <div className="text-white font-medium text-sm">{region}</div>
+            <div className="text-[#2A2A2F] font-medium text-sm">{region}</div>
             <div className={`text-xs mt-1 ${counts.restricted > 0 ? "text-amber-400" : "text-emerald-400"}`}>
               {counts.restricted > 0 ? `${counts.restricted}/${counts.total} reps restricted` : "Full visibility"}
             </div>
             {counts.reps.length > 0 && (
-              <div className="text-[#6b7280] text-xs mt-1">{counts.reps.join(", ")}</div>
+              <div className="text-[#6C6C71] text-xs mt-1">{counts.reps.join(", ")}</div>
             )}
           </div>
         ))}
       </div>
 
       {/* Sub table */}
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
         <SectionHeader
           title="Subcontractor Network"
           subtitle="Carrier equipment volume by sub — sorted by annual volume"
@@ -195,26 +195,26 @@ export default async function ChannelPartnersPage() {
         <div className="overflow-x-auto">
           <table className="w-full text-sm">
             <thead>
-              <tr className="border-b border-[#1f2937]">
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Subcontractor</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Region</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Specialty</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3 pr-4">Strength</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Annual Volume</th>
-                <th className="text-right text-[#6b7280] font-medium pb-3 pr-4">Projects</th>
-                <th className="text-left text-[#6b7280] font-medium pb-3">Reps</th>
+              <tr className="border-b border-[#C9CBCF]">
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Subcontractor</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Region</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Specialty</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3 pr-4">Strength</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Annual Volume</th>
+                <th className="text-right text-[#6C6C71] font-medium pb-3 pr-4">Projects</th>
+                <th className="text-left text-[#6C6C71] font-medium pb-3">Reps</th>
               </tr>
             </thead>
             <tbody>
               {data.aggregated.map((sub, i) => (
-                <tr key={i} className="border-b border-[#1f2937] last:border-0 hover:bg-[#1f2937]/50 transition-colors">
-                  <td className="py-2.5 pr-4 text-white font-medium">{sub.sub_name}</td>
-                  <td className="py-2.5 pr-4 text-[#9ca3af]">{sub.sub_region}</td>
+                <tr key={i} className="border-b border-[#C9CBCF] last:border-0 hover:bg-[#EDEDED]/50 transition-colors">
+                  <td className="py-2.5 pr-4 text-[#2A2A2F] font-medium">{sub.sub_name}</td>
+                  <td className="py-2.5 pr-4 text-[#6C6C71]">{sub.sub_region}</td>
                   <td className="py-2.5 pr-4"><StatusBadge value={sub.specialty} /></td>
                   <td className="py-2.5 pr-4"><StatusBadge value={sub.primary_strength} /></td>
-                  <td className="py-2.5 pr-4 text-right font-mono text-white">${(sub.total_volume / 1e6).toFixed(2)}M</td>
-                  <td className="py-2.5 pr-4 text-right font-mono text-[#9ca3af]">{sub.total_projects}</td>
-                  <td className="py-2.5 text-[#6b7280] text-xs">{sub.reps.join(", ")}</td>
+                  <td className="py-2.5 pr-4 text-right font-mono text-[#2A2A2F]">${(sub.total_volume / 1e6).toFixed(2)}M</td>
+                  <td className="py-2.5 pr-4 text-right font-mono text-[#6C6C71]">{sub.total_projects}</td>
+                  <td className="py-2.5 text-[#6C6C71] text-xs">{sub.reps.join(", ")}</td>
                 </tr>
               ))}
             </tbody>

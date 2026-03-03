@@ -22,23 +22,23 @@ export default async function RepSettingsPage() {
   return (
     <div className="space-y-8 max-w-2xl">
       <div className="flex items-start gap-3">
-        <div className="w-8 h-8 rounded-lg bg-[#0066ff]/20 flex items-center justify-center flex-shrink-0">
-          <Shield size={16} className="text-[#0066ff]" />
+        <div className="w-8 h-8 rounded-lg bg-[#4A3AFF]/20 flex items-center justify-center flex-shrink-0">
+          <Shield size={16} className="text-[#4A3AFF]" />
         </div>
         <div>
-          <h1 className="text-white text-xl font-bold">Data Sharing Permissions</h1>
-          <p className="text-[#6b7280] text-sm">Control what Carrier national sees from your territory. You're always in charge of your data.</p>
+          <h1 className="text-[#2A2A2F] text-xl font-bold">Data Sharing Permissions</h1>
+          <p className="text-[#6C6C71] text-sm">Control what Carrier national sees from your territory. You're always in charge of your data.</p>
         </div>
       </div>
 
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-4">
+      <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-4">
         <div className="flex items-center gap-3">
-          <div className="w-9 h-9 rounded-full bg-[#0066ff]/20 flex items-center justify-center text-[#0066ff] font-bold text-sm">MC</div>
+          <div className="w-9 h-9 rounded-full bg-[#4A3AFF]/20 flex items-center justify-center text-[#4A3AFF] font-bold text-sm">MC</div>
           <div>
-            <div className="text-white font-medium">{rep?.rep_name}</div>
-            <div className="text-[#6b7280] text-sm">{rep?.region} · Carrier</div>
+            <div className="text-[#2A2A2F] font-medium">{rep?.rep_name}</div>
+            <div className="text-[#6C6C71] text-sm">{rep?.region} · Carrier</div>
           </div>
-          <div className="ml-auto text-[#6b7280] text-xs">
+          <div className="ml-auto text-[#6C6C71] text-xs">
             Last updated: {perms?.updated_at?.split("T")[0] ?? "—"}
           </div>
         </div>

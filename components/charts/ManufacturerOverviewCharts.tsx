@@ -2,23 +2,26 @@
 
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  Cell, RadarChart, PolarGrid, PolarAngleAxis, Radar, Legend
+  Cell, Legend
 } from "recharts";
 import { SectionHeader } from "@/components/ui/section-header";
 
-const COLORS = ["#0066ff", "#10b981", "#f59e0b", "#ef4444", "#8b5cf6", "#06b6d4", "#f97316", "#84cc16", "#ec4899", "#6366f1"];
-const CARRIER_COLOR = "#0066ff";
+const BV_BLUE   = "#4A3AFF";
+const BV_PALETTE = ["#4A3AFF", "#16DA7C", "#FFCC17", "#CC98F6", "#EC4343", "#7383FF"];
+const GRID_COLOR = "#EDEDED";
+const AXIS_COLOR = "#6C6C71";
 
 const CustomTooltip = ({ active, payload, label }: any) => {
   if (!active || !payload?.length) return null;
   return (
-    <div className="bg-[#1f2937] border border-[#374151] rounded-lg p-3 text-sm shadow-xl">
-      <div className="text-[#9ca3af] mb-2 font-medium">{label}</div>
+    <div className="rounded-lg p-3 text-sm shadow-xl"
+      style={{ background: "#FFFFFF", border: "1px solid #C9CBCF", color: "#2A2A2F" }}>
+      <div className="mb-2 font-medium" style={{ color: "#6C6C71" }}>{label}</div>
       {payload.map((p: any, i: number) => (
         <div key={i} className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full" style={{ background: p.color }} />
-          <span className="text-[#9ca3af]">{p.name}:</span>
-          <span className="text-white font-medium">{p.value}</span>
+          <span style={{ color: "#6C6C71" }}>{p.name}:</span>
+          <span className="font-medium" style={{ color: "#2A2A2F" }}>{p.value}</span>
         </div>
       ))}
     </div>
@@ -34,20 +37,24 @@ export function ManufacturerOverviewCharts({ marketShare, regional }: Props) {
   return (
     <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
       {/* Market Share by Spec Count */}
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader
           title="Spec Share by Manufacturer"
           subtitle="Total specifications across all projects"
         />
         <ResponsiveContainer width="100%" height={240}>
           <BarChart data={marketShare} layout="vertical" margin={{ left: 8, right: 16 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" horizontal={false} />
-            <XAxis type="number" tick={{ fill: "#6b7280", fontSize: 11 }} axisLine={false} tickLine={false} />
-            <YAxis type="category" dataKey="name" tick={{ fill: "#9ca3af", fontSize: 11 }} axisLine={false} tickLine={false} width={80} />
+            <CartesianGrid strokeDasharray="3 3" stroke={GRID_COLOR} horizontal={false} />
+            <XAxis type="number" tick={{ fill: AXIS_COLOR, fontSize: 11 }} axisLine={false} tickLine={false} />
+            <YAxis type="category" dataKey="name" tick={{ fill: AXIS_COLOR, fontSize: 11 }} axisLine={false} tickLine={false} width={80} />
             <Tooltip content={<CustomTooltip />} />
             <Bar dataKey="specs" name="Total Specs" radius={[0, 4, 4, 0]}>
               {marketShare.map((entry, index) => (
-                <Cell key={index} fill={entry.name === "Carrier" ? CARRIER_COLOR : "#1f2937"} stroke={entry.name === "Carrier" ? "#0066ff" : "#374151"} strokeWidth={1} />
+                <Cell key={index}
+                  fill={entry.name === "Carrier" ? BV_BLUE : "#EDEDED"}
+                  stroke={entry.name === "Carrier" ? BV_BLUE : "#C9CBCF"}
+                  strokeWidth={1}
+                />
               ))}
             </Bar>
           </BarChart>
@@ -55,21 +62,21 @@ export function ManufacturerOverviewCharts({ marketShare, regional }: Props) {
       </div>
 
       {/* Regional Performance */}
-      <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+      <div className="rounded-xl p-5" style={{ background: "var(--card)", border: "1px solid var(--border)" }}>
         <SectionHeader
           title="Regional Performance"
           subtitle="Win rate and spec volume by region"
         />
         <ResponsiveContainer width="100%" height={240}>
           <BarChart data={regional} margin={{ left: 0, right: 16, top: 8 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="#1f2937" vertical={false} />
-            <XAxis dataKey="region" tick={{ fill: "#9ca3af", fontSize: 10 }} axisLine={false} tickLine={false} />
-            <YAxis yAxisId="left" tick={{ fill: "#6b7280", fontSize: 11 }} axisLine={false} tickLine={false} />
-            <YAxis yAxisId="right" orientation="right" tick={{ fill: "#6b7280", fontSize: 11 }} axisLine={false} tickLine={false} unit="%" />
+            <CartesianGrid strokeDasharray="3 3" stroke={GRID_COLOR} vertical={false} />
+            <XAxis dataKey="region" tick={{ fill: AXIS_COLOR, fontSize: 10 }} axisLine={false} tickLine={false} />
+            <YAxis yAxisId="left" tick={{ fill: AXIS_COLOR, fontSize: 11 }} axisLine={false} tickLine={false} />
+            <YAxis yAxisId="right" orientation="right" tick={{ fill: AXIS_COLOR, fontSize: 11 }} axisLine={false} tickLine={false} unit="%" />
             <Tooltip content={<CustomTooltip />} />
-            <Legend wrapperStyle={{ fontSize: "11px", color: "#9ca3af" }} />
-            <Bar yAxisId="left" dataKey="specs" name="Total Specs" fill="#1f2937" radius={[4, 4, 0, 0]} />
-            <Bar yAxisId="left" dataKey="won" name="Wins" fill={CARRIER_COLOR} radius={[4, 4, 0, 0]} />
+            <Legend wrapperStyle={{ fontSize: "11px", color: AXIS_COLOR }} />
+            <Bar yAxisId="left" dataKey="specs" name="Total Specs" fill="#EDEDED" radius={[4, 4, 0, 0]} />
+            <Bar yAxisId="left" dataKey="won" name="Wins" fill={BV_BLUE} radius={[4, 4, 0, 0]} />
           </BarChart>
         </ResponsiveContainer>
       </div>

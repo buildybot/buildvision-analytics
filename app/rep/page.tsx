@@ -106,12 +106,12 @@ export default async function RepDashboardPage() {
   return (
     <div className="space-y-8">
       <div className="flex items-start gap-4">
-        <div className="w-10 h-10 rounded-full bg-[#0066ff]/20 border border-[#0066ff]/40 flex items-center justify-center flex-shrink-0">
-          <User size={18} className="text-[#0066ff]" />
+        <div className="w-10 h-10 rounded-full bg-[#4A3AFF]/20 border border-[#4A3AFF]/40 flex items-center justify-center flex-shrink-0">
+          <User size={18} className="text-[#4A3AFF]" />
         </div>
         <div>
-          <h1 className="text-white text-xl font-bold">Marcus Chen — Northeast</h1>
-          <p className="text-[#6b7280] text-sm">Carrier rep · New York, NY · Territory dashboard</p>
+          <h1 className="text-[#2A2A2F] text-xl font-bold">Marcus Chen — Northeast</h1>
+          <p className="text-[#6C6C71] text-sm">Carrier rep · New York, NY · Territory dashboard</p>
         </div>
       </div>
 
@@ -124,24 +124,24 @@ export default async function RepDashboardPage() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* My Specs */}
-        <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="My Spec Activity" subtitle="Carrier specs in Northeast" />
           <div className="space-y-2">
             {data.mySpecs.map((spec) => (
-              <div key={spec.id} className="flex items-start gap-3 py-1.5 border-b border-[#1f2937] last:border-0">
+              <div key={spec.id} className="flex items-start gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
                 <StatusBadge value={spec.status} className="flex-shrink-0 mt-0.5" />
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm truncate">{spec.project_name}</div>
-                  <div className="text-[#6b7280] text-xs">{spec.firm_name} · {spec.city} · {spec.eq_name?.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</div>
+                  <div className="text-[#2A2A2F] text-sm truncate">{spec.project_name}</div>
+                  <div className="text-[#6C6C71] text-xs">{spec.firm_name} · {spec.city} · {spec.eq_name?.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</div>
                 </div>
-                <div className="text-white text-sm font-mono flex-shrink-0">${((spec.value_usd ?? 0) / 1000).toFixed(0)}K</div>
+                <div className="text-[#2A2A2F] text-sm font-mono flex-shrink-0">${((spec.value_usd ?? 0) / 1000).toFixed(0)}K</div>
               </div>
             ))}
           </div>
         </div>
 
         {/* My Firms BOD */}
-        <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="My Engineering Firms" subtitle="Carrier BOD% at my accounts (2025)" />
           <div className="space-y-2.5">
             {data.myFirmBOD.map((firm, i) => {
@@ -149,13 +149,13 @@ export default async function RepDashboardPage() {
               return (
                 <div key={i} className="flex items-center gap-3">
                   <div className="flex-1 min-w-0">
-                    <div className="text-white text-sm font-medium">{firm.firm_name}</div>
-                    <div className="text-[#6b7280] text-xs">{firm.firm_city} · {firm.projects} projects</div>
+                    <div className="text-[#2A2A2F] text-sm font-medium">{firm.firm_name}</div>
+                    <div className="text-[#6C6C71] text-xs">{firm.firm_city} · {firm.projects} projects</div>
                   </div>
-                  <div className="w-20 h-1.5 bg-[#1f2937] rounded-full overflow-hidden flex-shrink-0">
-                    <div className="h-full rounded-full" style={{ width: `${pct}%`, background: pct >= 35 ? "#10b981" : pct >= 20 ? "#0066ff" : "#f59e0b" }} />
+                  <div className="w-20 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden flex-shrink-0">
+                    <div className="h-full rounded-full" style={{ width: `${pct}%`, background: pct >= 35 ? "#16DA7C" : pct >= 20 ? "#4A3AFF" : "#f59e0b" }} />
                   </div>
-                  <span className={`text-sm font-mono font-semibold flex-shrink-0 ${pct >= 35 ? "text-emerald-400" : pct >= 20 ? "text-[#0066ff]" : "text-amber-400"}`}>{pct}%</span>
+                  <span className={`text-sm font-mono font-semibold flex-shrink-0 ${pct >= 35 ? "text-emerald-400" : pct >= 20 ? "text-[#4A3AFF]" : "text-amber-400"}`}>{pct}%</span>
                 </div>
               );
             })}
@@ -166,13 +166,13 @@ export default async function RepDashboardPage() {
       {/* Opportunities + Subs */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Comp threats = my opportunities */}
-        <div className="bg-[#111827] border border-amber-400/20 rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-amber-400/20 rounded-xl p-5">
           <SectionHeader title="🎯 My Opportunities" subtitle="Northeast firms where a competitor has high BOD — your targets" />
           <div className="space-y-2">
             {data.compThreats.map((t, i) => (
-              <div key={i} className="flex items-center gap-3 py-1.5 border-b border-[#1f2937] last:border-0">
+              <div key={i} className="flex items-center gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm font-medium">{t.firm_name}</div>
+                  <div className="text-[#2A2A2F] text-sm font-medium">{t.firm_name}</div>
                   <div className="text-amber-400 text-xs">{t.mfg_name?.replace(" Technologies", "")} holds {Math.round(Number(t.bod_pct))}% BOD</div>
                 </div>
                 <div className="text-amber-400 text-xs font-medium">Opportunity →</div>
@@ -182,17 +182,17 @@ export default async function RepDashboardPage() {
         </div>
 
         {/* My Subs */}
-        <div className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+        <div className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
           <SectionHeader title="My Subcontractors" subtitle="Channel partners in my territory" />
           <div className="space-y-2">
             {data.mySubs.map((sub, i) => (
-              <div key={i} className="flex items-center gap-3 py-1.5 border-b border-[#1f2937] last:border-0">
+              <div key={i} className="flex items-center gap-3 py-1.5 border-b border-[#C9CBCF] last:border-0">
                 <div className="flex-1 min-w-0">
-                  <div className="text-white text-sm font-medium">{sub.sub_name}</div>
-                  <div className="text-[#6b7280] text-xs">{sub.specialty?.replace("_", " ")} · {sub.project_count} projects</div>
+                  <div className="text-[#2A2A2F] text-sm font-medium">{sub.sub_name}</div>
+                  <div className="text-[#6C6C71] text-xs">{sub.specialty?.replace("_", " ")} · {sub.project_count} projects</div>
                 </div>
                 <StatusBadge value={sub.relationship_strength} />
-                <div className="text-white text-sm font-mono">${((sub.annual_volume_usd ?? 0) / 1e6).toFixed(2)}M</div>
+                <div className="text-[#2A2A2F] text-sm font-mono">${((sub.annual_volume_usd ?? 0) / 1e6).toFixed(2)}M</div>
               </div>
             ))}
           </div>

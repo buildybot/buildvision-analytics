@@ -78,8 +78,8 @@ export default async function RepEngineeringFirmsPage() {
   return (
     <div className="space-y-8">
       <div>
-        <h1 className="text-white text-xl font-bold">My Engineering Firms</h1>
-        <p className="text-[#6b7280] text-sm">Carrier BOD at my Northeast accounts — 2025</p>
+        <h1 className="text-[#2A2A2F] text-xl font-bold">My Engineering Firms</h1>
+        <p className="text-[#6C6C71] text-sm">Carrier BOD at my Northeast accounts — 2025</p>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
@@ -89,17 +89,17 @@ export default async function RepEngineeringFirmsPage() {
 
       <div className="space-y-4">
         {firms.map((firm, i) => (
-          <div key={i} className="bg-[#111827] border border-[#1f2937] rounded-xl p-5">
+          <div key={i} className="bg-[#F8F8F8] border border-[#C9CBCF] rounded-xl p-5">
             <div className="flex items-start justify-between mb-4">
               <div>
-                <div className="text-white font-semibold">{firm.name}</div>
-                <div className="text-[#6b7280] text-sm">{firm.city}, {firm.state}</div>
+                <div className="text-[#2A2A2F] font-semibold">{firm.name}</div>
+                <div className="text-[#6C6C71] text-sm">{firm.city}, {firm.state}</div>
               </div>
               <div className="text-right">
-                <div className={`text-xl font-bold ${firm.avgBOD >= 35 ? "text-emerald-400" : firm.avgBOD >= 20 ? "text-[#0066ff]" : "text-amber-400"}`}>
+                <div className={`text-xl font-bold ${firm.avgBOD >= 35 ? "text-emerald-400" : firm.avgBOD >= 20 ? "text-[#4A3AFF]" : "text-amber-400"}`}>
                   {firm.avgBOD}%
                 </div>
-                <div className="text-[#6b7280] text-xs">Avg BOD</div>
+                <div className="text-[#6C6C71] text-xs">Avg BOD</div>
               </div>
             </div>
             {firm.topComp && firm.topComp.pct > firm.avgBOD && (
@@ -110,12 +110,12 @@ export default async function RepEngineeringFirmsPage() {
             <div className="space-y-1.5">
               {firm.eqTypes.sort((a, b) => b.bod - a.bod).map((eq, j) => (
                 <div key={j} className="flex items-center gap-3">
-                  <div className="text-[#9ca3af] text-xs w-48 truncate flex-shrink-0">{eq.name.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</div>
-                  <div className="flex-1 h-1.5 bg-[#1f2937] rounded-full overflow-hidden">
-                    <div className="h-full rounded-full" style={{ width: `${eq.bod}%`, background: eq.bod >= 35 ? "#10b981" : eq.bod >= 20 ? "#0066ff" : "#f59e0b" }} />
+                  <div className="text-[#6C6C71] text-xs w-48 truncate flex-shrink-0">{eq.name.replace("Chiller — ", "").replace("VRF / VRV System", "VRF")}</div>
+                  <div className="flex-1 h-1.5 bg-[#EDEDED] rounded-full overflow-hidden">
+                    <div className="h-full rounded-full" style={{ width: `${eq.bod}%`, background: eq.bod >= 35 ? "#16DA7C" : eq.bod >= 20 ? "#4A3AFF" : "#f59e0b" }} />
                   </div>
-                  <span className="text-white text-xs font-mono w-8 text-right">{eq.bod}%</span>
-                  <span className="text-[#6b7280] text-xs w-16">{eq.projects} proj</span>
+                  <span className="text-[#2A2A2F] text-xs font-mono w-8 text-right">{eq.bod}%</span>
+                  <span className="text-[#6C6C71] text-xs w-16">{eq.projects} proj</span>
                 </div>
               ))}
             </div>

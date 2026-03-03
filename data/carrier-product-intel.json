@@ -1,0 +1,1533 @@
+{
+  "generatedAt": "2026-03-03T17:42:32.358Z",
+  "carrier": {
+    "name": "Carrier",
+    "totalDocs": 3453,
+    "docsByType": {
+      "spec-sheet": 2486,
+      "iom": 579,
+      "catalog": 255,
+      "guide": 85,
+      "brochure": 48
+    },
+    "summaryCount": 2310,
+    "topProducts": [
+      {
+        "name": "Constant Volume Fan Powered Terminal Unit",
+        "count": 18
+      },
+      {
+        "name": "40VM900001",
+        "count": 14
+      },
+      {
+        "name": "RBC-AMS54E-UL",
+        "count": 14
+      },
+      {
+        "name": "SHRMe VRF Outdoor Unit",
+        "count": 13
+      },
+      {
+        "name": "45Q",
+        "count": 13
+      },
+      {
+        "name": "i-Vu Building Automation System",
+        "count": 12
+      },
+      {
+        "name": "KSACN0101AAA",
+        "count": 11
+      },
+      {
+        "name": "Variable Volume Fan Powered Terminal Unit",
+        "count": 11
+      },
+      {
+        "name": "RBC-AS41UL",
+        "count": 11
+      },
+      {
+        "name": "40VM900002",
+        "count": 10
+      },
+      {
+        "name": "40VM900003",
+        "count": 10
+      },
+      {
+        "name": "KSACN0501AAA",
+        "count": 9
+      },
+      {
+        "name": "MMY-MAP1206HT6P-UL",
+        "count": 9
+      },
+      {
+        "name": "MMY-MAP1206HT9P-UL",
+        "count": 9
+      },
+      {
+        "name": "MMY-MAP1206FT6P-UL",
+        "count": 9
+      },
+      {
+        "name": "MMY-MAP1206FT9P-UL",
+        "count": 9
+      },
+      {
+        "name": "40VM900005",
+        "count": 9
+      },
+      {
+        "name": "SMMSu / SHRMu VRF Indoor Unit",
+        "count": 9
+      },
+      {
+        "name": "RBC-AWSU52-UL",
+        "count": 9
+      },
+      {
+        "name": "MMY-MAP1446HT9P-UL",
+        "count": 8
+      },
+      {
+        "name": "MMY-MAP1446FT9P-UL",
+        "count": 8
+      },
+      {
+        "name": "KSAIF0401AAA",
+        "count": 7
+      },
+      {
+        "name": "TCB-SIR41UYP-UL",
+        "count": 7
+      },
+      {
+        "name": "MMY-MAP1446HT6P-UL",
+        "count": 7
+      },
+      {
+        "name": "TCB-TC41U-UL",
+        "count": 7
+      },
+      {
+        "name": "48LC",
+        "count": 6
+      },
+      {
+        "name": "38MVC",
+        "count": 6
+      },
+      {
+        "name": "KSACN0401AAA",
+        "count": 6
+      },
+      {
+        "name": "Carrier® ChillerVu™",
+        "count": 6
+      },
+      {
+        "name": "RBC-AX33UYP-UL",
+        "count": 6
+      },
+      {
+        "name": "MMY-MAP1446FT6P-UL",
+        "count": 6
+      },
+      {
+        "name": "MMY-MAP1686FT6P-UL",
+        "count": 6
+      },
+      {
+        "name": "KSAIC0101230",
+        "count": 6
+      },
+      {
+        "name": "38VMA120HDS5-1",
+        "count": 6
+      },
+      {
+        "name": "38VMA096HDS6-1",
+        "count": 6
+      },
+      {
+        "name": "38VMA120HDS6-1",
+        "count": 6
+      },
+      {
+        "name": "MUP1441FT9P-UL",
+        "count": 6
+      },
+      {
+        "name": "MUP1681FT9P-UL",
+        "count": 6
+      },
+      {
+        "name": "MUP1681FT6P-UL",
+        "count": 6
+      },
+      {
+        "name": "MUP1681HT6P-UL",
+        "count": 6
+      },
+      {
+        "name": "TCB-AX32UL",
+        "count": 6
+      },
+      {
+        "name": "53DS-900---118",
+        "count": 5
+      },
+      {
+        "name": "30MPA",
+        "count": 5
+      },
+      {
+        "name": "224ANS",
+        "count": 5
+      },
+      {
+        "name": "AquaEdge® 19DV",
+        "count": 5
+      },
+      {
+        "name": "48/50 LC",
+        "count": 5
+      },
+      {
+        "name": "i-Vu Pro",
+        "count": 5
+      },
+      {
+        "name": "FN1AAF",
+        "count": 5
+      },
+      {
+        "name": "40MBDQ",
+        "count": 5
+      },
+      {
+        "name": "40VM900008",
+        "count": 5
+      }
+    ],
+    "topSpecs": [],
+    "sellingPoints": [
+      {
+        "docTitle": "Single Duct Terminal Unit Control Package IVD0",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal sheet for a single duct terminal unit with an Invensys MNB-V2 controller/actuator, control package IVDO. It includes wiring diagrams and notes for installation and operation, specifically for applications without heat or with hot water heat.",
+        "keyProducts": [
+          "Invensys MNB-V2 Controller/Actuator",
+          "Single Duct Terminal Unit",
+          "IVDO Control Package"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8909_TV-VVTZC-E2 TruVu Fan Powered Proportional Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV-VVTZC-E2 controller/actuator used in a fan-powered proportional hot water valve system. It details the connections for power, inputs, outputs, and other components within the system.",
+        "keyProducts": [
+          "Carrier TV-VVTZC-E2",
+          "TruVu Fan Powered Proportional Hot Water Heat"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8906_TV-VVTZC-E2 TruVu Fan Powered Cooling Only",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV-VVTZC-E2 controller/actuator, designed for fan-powered cooling-only applications. It details the connections for power, inputs, outputs, and network communication, including wiring instructions for 208/240V transformers.",
+        "keyProducts": [
+          "Carrier TV-VVTZC-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8907_TV-VVTZC-E2 TruVu Fan Powered Staged Electric Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV-VVTZC-E2 controller/actuator used in HVAC systems. It details the connections for power, sensors, actuators, and other components for fan-powered staged electric heat applications.",
+        "keyProducts": [
+          "TV-VVTZC-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8905_TV-VVTZC-E2 TruVu Single Duct Proportional Electric Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for the Carrier TV-VVTZC-E2 controller/actuator, designed for use in single duct variable volume and temperature (VVT) systems. It details the connections for power, inputs, outputs, sensors, and relays, providing guidance for field wiring and mounting.",
+        "keyProducts": [
+          "Carrier TV-VVTZC-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8903_TV-VVTZC-E2 TruVu Single Duct Proportional Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV-VVTZC-E2 single duct controller/actuator used with a proportional hot water valve. It details the electrical connections for power, sensors, and control signals.",
+        "keyProducts": [
+          "Carrier TV-VVTZC-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8902_TV-VVTZC-E2 TruVu Single Duct 2-Position Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV-VVTZC-E2 controller/actuator used in a single duct HVAC system with on/off hot water valve control. It details the electrical connections for power, sensors, and actuators, including transformer wiring options for different voltage supplies.",
+        "keyProducts": [
+          "TV-VVTZC-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48/50A2,A3,A4,A5020-060 Single Package Rooftop Gas Heating/Electric Cooling and Electric Cooling Units with ComfortLink™ Controls",
+        "type": "spec-sheet",
+        "summary": "This document provides wiring diagrams and accessory information for Carrier WeatherMaker single package rooftop units, specifically the 48/50A2, A3, A4, A5020-060 series. These units are designed for gas heating/electric cooling and electric cooling applications and feature ComfortLink™ controls.",
+        "keyProducts": [
+          "48/50A2",
+          "48/50A3",
+          "48/50A4",
+          "48/50A5020-060",
+          "WeatherMaker"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "8901_TV-VVTZC-E2 TruVu Single Duct Staged Electric Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for the Carrier TV-VVTZC-E2 single duct controller/actuator, which can be mounted by A.S.C. It details the electrical connections for power, sensors, and staged electric heat.",
+        "keyProducts": [
+          "TV-VVTZC-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4508_TV-VAVB3-E2 TruVu Fan Powered 2-Position Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV VAVB3-E2 controller/actuator mounted by A.S.C. It details the wiring connections for power, sensors, and control of a fan-powered 2-position hot water heat system.",
+        "keyProducts": [
+          "Carrier TV VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4511_TV-VAVB3-E2 TruVu Fan Powered Proportional Electric Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV-VAVB3-E2 fan-powered proportional electric heat controller/actuator. It details the connections for power, sensors, inputs, outputs, and relays, and includes notes on mounting and wiring practices.",
+        "keyProducts": [
+          "Carrier TV-VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4510_TV-VAVB3-E2 TruVu Fan Powered Field Installed Staged Electric Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for the Carrier TV VAVB3-E2 controller/actuator, specifically for a fan-powered system with field-installed staged electric heat. It details the connections for power, sensors, and various control signals.",
+        "keyProducts": [
+          "Carrier TV VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4507_TV-VAVB3-E2 TruVu Fan Powered Staged Electric Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a wiring diagram for a Carrier TV VAVB3-E2 controller/actuator used in HVAC systems. It details the electrical connections for power, sensors, and control components, including transformers, inlet sensors, and staged electric heat.",
+        "keyProducts": [
+          "Carrier TV VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4506_TV-VAVB3-E2 TruVu Fan Powered Cooling Only",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for a Carrier TV VAVB3-E2 controller/actuator, specifically for fan-powered cooling only applications. It details the connections for power, sensors, and other control components.",
+        "keyProducts": [
+          "Carrier TV VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4505_TV-VAVB3-E2 TruVu Single Duct Proportional Electric Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for the Carrier TV-VAVB3-E2 controller/actuator, mounted by A.S.C. It details the electrical connections and components for a single duct proportional electric heat system, including temperature sensors and actuator wiring.",
+        "keyProducts": [
+          "Carrier TV-VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4503_TV-VAVB3-E2 TruVu Single Duct Proportional Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for the Carrier TV-VAVB3-E2 controller/actuator, which is a proportional hot water valve used in single duct HVAC systems. It details the wiring connections for power, sensors, and other components.",
+        "keyProducts": [
+          "Carrier TV-VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4502_TV-VAVB3-E2 TruVu Single Duct 2-Position Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for the Carrier TV-VAVB3-E2 controller/actuator, specifically for single duct, 2-position hot water heat applications. It details the wiring connections for power, sensors, and other components.",
+        "keyProducts": [
+          "Carrier TV-VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4501_TV-VAVB3-E2 TruVu Single Duct Staged Electric Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for the Carrier TV-VAVB3-E2 controller/actuator, specifically for single duct systems with up to 3 stages of electric heat. It details the wiring connections for power, sensors, and various inputs/outputs.",
+        "keyProducts": [
+          "TV-VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4412_OPN-B3-P-02 Fan Powered Proportional Electric Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for a Carrier Zone Ctrl II (OPN-B3-P-02) fan-powered zone controller with proportional electric heat. It details the connections for various components such as temperature sensors, actuators, airflow switches, and relays.",
+        "keyProducts": [
+          "Carrier Zone Ctrl II (OPN-B3-P-02)"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4500_TV-VAVB3-E2 TruVu Single Duct Cooling Only",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for the Carrier TV-VAVB3-E2 controller/actuator, specifically for single duct cooling only applications. It details the wiring connections for power, sensors, and other components.",
+        "keyProducts": [
+          "TV-VAVB3-E2"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4406_OPN-B3-P-02 Single Duct Proportional Electric Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for a Carrier Zone Ctrl II (OPN-B3-P-02) single duct proportional electric heat system. It details the connections for various components such as temperature sensors, actuators, and relays.",
+        "keyProducts": [
+          "Carrier Zone Ctrl II (OPN-B3-P-02)"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4410_OPN-B3-P-02 Fan Powered Proportional Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for a fan-powered zone control system, specifically the Carrier Zone Ctrl II (OPN-B3-P-02). It details the electrical connections for components such as the supply air temperature sensor, transformer, inlet sensor, and fan control, used in a hot water heating application.",
+        "keyProducts": [
+          "Carrier Zone Ctrl II (OPN-B3-P-02)"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4408_OPN-B3-P-02 Fan Powered Staged Electric Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for a Carrier Zone Ctrl II (OPN-B3-P-02) used in a fan-powered staged electric heat system. It details the connections for power, sensors, actuators, and control signals.",
+        "keyProducts": [
+          "Carrier Zone Ctrl II (OPN-B3-P-02)"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4403_OPN-B3-P-02 Single Duct 2-Position Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram for a single duct zone control system, specifically the Zone Ctrl II, OPN-B3-P-02 model. It illustrates the electrical connections for on/off hot water heat applications, including wiring for the transformer, inlet sensor, and actuator.",
+        "keyProducts": [
+          "Zone Ctrl II",
+          "OPN-B3-P-02"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4401_OPN-B3-P-02 Single Duct Cooling Only",
+        "type": "spec-sheet",
+        "summary": "This is a wiring diagram for a Carrier Zone Controller II (OPN-B3-P-02) single duct cooling system with BACnet networking capability. The control system manages zone temperature through analog and binary outputs, featuring a 24 VAC transformer, inlet sensor, and damper actuator for air flow regulation. The diagram includes power supply options (120/277V or 208-240V) and detailed wiring connections for field installation.",
+        "keyProducts": [
+          "Zone Controller II",
+          "OPN-B3-P-02",
+          "Carrier Zone Ctrl II"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "4404_OPN-B3-P-02 Single Duct Proportional Hot Water Heat",
+        "type": "spec-sheet",
+        "summary": "This is a wiring diagram for a Carrier Zone Controller II (OPN-B3-P-02) single duct proportional hot water heating system with BACnet controls. The system integrates a zone controller with analog and binary outputs, transformer-based power supply options (120/277V or 208-240V), and inlet temperature sensing for proportional hot water heat control in HVAC applications.",
+        "keyProducts": [
+          "OPN-B3-P-02",
+          "Zone Controller II",
+          "Carrier Zone Ctrl II"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "38AH094-134 Air-Cooled Condensing Units 50/60 Hz",
+        "type": "spec-sheet",
+        "summary": "This document contains wiring diagrams for Carrier 38AH094-134 series air-cooled condensing units produced after April 1994, including information for Motormaster® III head pressure control. It provides electrical characteristics, wiring types, and label diagrams for single-package and modular units.",
+        "keyProducts": [
+          "38AH094",
+          "38AH104",
+          "38AH124A",
+          "38AH124B",
+          "38AH134A",
+          "38AH134B"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "38AK007-012, 38AKS008-012 Air-Cooled Condensing Units, 38AQS008 Split System Heat Pump, 50/60 Hz, Units Produced After March, 1994",
+        "type": "spec-sheet",
+        "summary": "This document provides wiring diagrams and operational sequences for Carrier air-cooled condensing units (38AK007-012, 38AKS008-012) and a split system heat pump (38AQS008) designed for 50/60 Hz operation. The units include detailed electrical schematics for various voltage configurations (208/230-3-60, 460-3-60, 220-3-50, 400-3-50, 575-3-60 V) and operational procedures for cooling, heating, and defrost modes with integrated safety controls and time-delay protection.",
+        "keyProducts": [
+          "38AK007-012",
+          "38AKS008-012",
+          "38AQS008",
+          "38AK007 (575-V)",
+          "38AK008,012 (575-V)"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "30RB060-390 Air-Cooled Liquid Chillers with ComfortLink™ Controls, 60 Hz",
+        "type": "spec-sheet",
+        "summary": "This document contains wiring diagrams for Carrier 30RB060-390 air-cooled liquid chillers with ComfortLink™ controls operating at 60 Hz. It includes information on power and control schematics, component arrangements, and field wiring for various unit sizes and voltages.",
+        "keyProducts": [
+          "30RB060",
+          "30RB070",
+          "30RB080",
+          "30RB090",
+          "30RB100",
+          "30RB110",
+          "30RB120",
+          "30RB130",
+          "30RB140",
+          "30RB150"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Variable Speed Screw Compressor, Raising the Bar for Variable Speed Performance",
+        "type": "spec-sheet",
+        "summary": "This Carrier Corporation document introduces variable speed screw compressor technology for water-cooled chillers designed to reduce building HVAC energy consumption. The product uses variable frequency drives (VFDs) to match motor speed with cooling requirements, achieving significant power usage reductions during part-load operation. The technology is positioned as an advancement over traditional centrifugal compressors, providing maximum speed reduction and improved efficiency for commercial ",
+        "keyProducts": [
+          "Variable Speed Screw Water-Cooled Chiller",
+          "Variable Speed Screw Compressor"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "09DK020-044 Air-Cooled Condenser Units Motormaster Low Ambient Controls 50/60 Hz",
+        "type": "spec-sheet",
+        "summary": "This document is a wiring diagram index for Carrier 09DK020-044 series air-cooled condenser units with Motormaster low ambient controls operating at 50/60 Hz. It provides wiring schematics and instructions for standard unit control, Motormaster configurations, and fan cycling control.",
+        "keyProducts": [
+          "09DK020-044 Air-Cooled Condenser Units",
+          "Motormaster Low Ambient Controls"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "06E, 07E 022-044 Compressors and Condensing Units, 60 Hz Hermetic, Water-Cooled",
+        "type": "spec-sheet",
+        "summary": "This document provides wiring diagrams and general notes for Carrier 06E and 07E series compressors and condensing units. These are 60-Hertz hermetic, water-cooled units designed for 208- and 230-volt applications, featuring extended-voltage motors.",
+        "keyProducts": [
+          "06E",
+          "07E",
+          "022",
+          "044"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Scroll Compressors: High-Efficiency Compression for Commercial and Industrial Applications",
+        "type": "guide",
+        "summary": "This document describes scroll compressors, which are high-efficiency compression devices for commercial and industrial applications. It covers their operating principles, construction, performance, and applications in HVAC and refrigeration systems.",
+        "keyProducts": [],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Unit Ventilators: a Primer",
+        "type": "spec-sheet",
+        "summary": "SKIPPED",
+        "keyProducts": [],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Mechanical Room Update: Considerations In The Application Of Centrifugal Chillers Using Open Drive Motors",
+        "type": "guide",
+        "summary": "This document is an update on mechanical room considerations for centrifugal chillers using open drive motors, focusing on refrigerant and oil leakage, failure modes, and proper ventilation. It highlights the importance of careful maintenance and proper installation of open motors in centrifugal chillers.",
+        "keyProducts": [
+          "Centrifugal Chillers",
+          "Open Drive Motors"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Induction Beams, Engineered Comfort for Today’s Buildings",
+        "type": "spec-sheet",
+        "summary": "This document is a white paper from Carrier Corporation about induction beams, an updated induction terminal for today's buildings applied in the ceiling plane. It compares induction beams to variable air volume (VAV) systems and European-style chilled beam (CB) systems.",
+        "keyProducts": [
+          "Induction Beams"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Humidi-Mizer® Adaptive Dehumidification System for Applied Rooftop Units",
+        "type": "spec-sheet",
+        "summary": "The document describes the Humidi-MiZer® adaptive dehumidification system for Carrier applied rooftop units, specifically the WeatherMaker® 48/50A, WeatherMaster® 48/50P, and WeatherExpert® 48/50N models. This system is designed for packaged rooftop units in applications requiring high indoor comfort and humidity control, offering improved dehumidification capabilities and flexibility to meet varying sensible and latent load requirements.",
+        "keyProducts": [
+          "WeatherMaker® 48/50A",
+          "WeatherMaster® 48/50P",
+          "WeatherExpert® 48/50N",
+          "Humidi-MiZer® Adaptive Dehumidification System"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Heat Recovery for Chilled Water Systems: Applications for Condenserless Chillers - Updated July 2022",
+        "type": "guide",
+        "summary": "This document from Carrier discusses heat recovery from chilled water systems, focusing on applications for heat reclaim chillers. It explores the use of these chillers for various heating needs by recovering heat that would otherwise be wasted.",
+        "keyProducts": [
+          "Heat Reclaim Chillers"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Heat Recovery from Air-Cooled Chillers: Application for Heat Reclaim Chillers",
+        "type": "guide",
+        "summary": "This document from Carrier discusses heat recovery from air-cooled chillers, specifically focusing on applications for heat reclaim chillers. It explores how to utilize the heat generated by chillers for other purposes, improving energy efficiency.",
+        "keyProducts": [],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Better Than Oil-Free: Why Screw Chillers with Pure Speed Capacity Control Save More Energy Than Magnetic Bearing Chillers",
+        "type": "spec-sheet",
+        "summary": "This document compares the energy efficiency of screw chillers with pure speed capacity control versus oil-free magnetic bearing chillers. It argues that screw chillers with pure speed capacity control save more energy than magnetic bearing chillers due to the elimination of mechanical unloaders and surge.",
+        "keyProducts": [
+          "Screw Chillers with Pure Speed Capacity Control",
+          "Oil-Free Magnetic Bearing Chillers"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Chilled Water System Optimizer",
+        "type": "spec-sheet",
+        "summary": "This document is a white paper by Carrier Corporation about a Chilled Water System Optimizer. It discusses the optimization of chilled water systems, likely focusing on energy efficiency and performance improvements. The document was published in July 2017.",
+        "keyProducts": [
+          "Chilled Water System Optimizer"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Environmental Design Considerations for Hospital Operating Rooms White Paper",
+        "type": "brochure",
+        "summary": "This document is a white paper by Carrier Corporation providing environmental design considerations for hospital operating rooms. It discusses eliminating wet and moldy final filters in healthcare air handlers, air-conditioning load analysis methodology, environmental space temperature and humidity requirements, outdoor ventilation air loads, and operating room moisture migration considerations.",
+        "keyProducts": [],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Application of Fans in Commercial HVAC Equipment",
+        "type": "guide",
+        "summary": "This technical document from Carrier Corporation provides guidance on the application of centrifugal fans in commercial HVAC equipment, covering forward-curved (FC) and airfoil (AF) fan types used in air handlers and rooftop units. The document details fan characteristics, arrangements (housed and plenum), drive types, construction standards, and selection criteria for low to medium-pressure HVAC applications. Key specifications include operating pressures under 5.0 inches water gauge and rotati",
+        "keyProducts": [
+          "Forward-Curved (FC) Fans",
+          "Airfoil (AF) Fans",
+          "Backward Incline (BI) Fans",
+          "Axial Fans",
+          "Housed Fans",
+          "Plenum Fans"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Air Handler and Large Rooftop Unit Shaft Grounding Ring Usage",
+        "type": "spec-sheet",
+        "summary": "This document discusses the usage of shaft grounding rings (SGR) in air handlers and large rooftop units with variable frequency drives (VFDs). It explains when SGRs are needed to mitigate potential motor damage caused by VFD installations, focusing on the relationship between cable length and voltage spikes.",
+        "keyProducts": [],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Warranty - Commercial Rooftop Equipment Including Gas Heat",
+        "type": "spec-sheet",
+        "summary": "This document outlines the warranty for Carrier commercial rooftop equipment including gas heat. It details the warranty period, coverage, and general conditions, including exclusions and limitations of liability.",
+        "keyProducts": [
+          "Commercial Rooftop Equipment",
+          "Gas Heat"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Warranty - Extended Protection Plan for Commercial Packaged Equipment with Cooling Capacity of 15 Tons or Less",
+        "type": "spec-sheet",
+        "summary": "This document outlines the warranty and extended protection plan for Carrier commercial packaged HVAC equipment with a cooling capacity of 15 tons or less. It details the coverage period, general warranty statements, conditions, and exclusions, as well as purchaser obligations.",
+        "keyProducts": [
+          "Commercial Packaged Equipment",
+          "Hermetic Motor-Compressor"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Warranty - 50PC,PS,PT,PEC,HQP,VQP,WC,WD",
+        "type": "spec-sheet",
+        "summary": "This document is a limited warranty for Carrier commercial water source heat pump equipment, specifically the 50PC, PS, PT, PEC, HQP, VQP, PSW, WC, and WD series. It outlines the warranty coverage periods, general conditions, and exclusions, including limitations on implied warranties and consequential damages.",
+        "keyProducts": [
+          "50PC",
+          "PS",
+          "PT",
+          "PEC",
+          "HQP",
+          "VQP",
+          "PSW",
+          "WC",
+          "WD"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Warranty - 50A and 50P and 50N Commercial Rooftop",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier's 50A, 50P, and 50N series commercial rooftop equipment. It details the warranty periods for various components, general conditions, and exclusions.",
+        "keyProducts": [
+          "50A",
+          "50P",
+          "50N"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Refrigerant Warranty Certificate for Water Cooled Chillers, US and Canada Only",
+        "type": "spec-sheet",
+        "summary": "This document is a refrigerant warranty certificate for Carrier water-cooled chillers. The warranty applies to Carrier 19-Series (19XR, 19MV & 19DV) and 23-Series (23XRV) AquaEdge® chillers shipped on or after October 1, 2004, and installed in the continental United States, Alaska, Hawaii and Canada.",
+        "keyProducts": [
+          "19XR",
+          "19MV",
+          "19DV",
+          "23XRV",
+          "AquaEdge chillers"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Variable Refrigerant Flow Units",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Variable Refrigerant Flow (VRF) products installed on or after August 1, 2024. It details the warranty coverage for parts and compressors, including the duration for original and subsequent owners, and specifies conditions, limitations, and exclusions.",
+        "keyProducts": [
+          "VRF Products"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Warranty - 48A and 48P and 48N Commercial Rooftop",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier's 48A, 48P, and 48N series commercial rooftop equipment, detailing coverage periods, scope, general conditions, and exclusions. It specifies warranty terms for parts, microchannel condenser coils, heat exchangers, and ultra-low leak economizers.",
+        "keyProducts": [
+          "48A",
+          "48P",
+          "48N"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Commerical Packaged Cooling Rooftop Unit with Puron Refrigerant and EnergyX",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty provided by Carrier Corporation for their commercial packaged cooling rooftop units that use Puron® Refrigerant and EnergyX®. The warranty covers defects in material and workmanship under normal use and service, with specific time periods for different components like all parts, motor-compressor, electric heater elements, and energy heat exchanger wheel.",
+        "keyProducts": [
+          "Commercial Packaged Cooling Rooftop Unit",
+          "Puron® Refrigerant",
+          "EnergyX®"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Commercial Equipment",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier commercial HVAC equipment, covering defects in materials or workmanship. It specifies warranty periods, scope of coverage (parts and labor), general conditions, and limitations, including exclusions for certain damages and costs.",
+        "keyProducts": [
+          "30HX",
+          "30MP",
+          "30XA",
+          "30XV",
+          "30XW",
+          "30RA",
+          "30RB",
+          "30RC",
+          "16",
+          "17"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Gas Heating/Electric Cooling Rooftop Unit with Puron Refrigerant and EnergyX",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty provided by Carrier Corporation for their Commercial Rooftop Equipment, specifically Gas Heating / Electric Cooling Rooftop Units using Puron® Refrigerant and EnergyX®. The warranty covers defects in material and workmanship under normal use and service, with specific time periods for different components like all parts, motor-compressor, heat exchanger, and energy heat exchanger wheel.",
+        "keyProducts": [
+          "Gas Heating / Electric Cooling Rooftop Unit with Puron® Refrigerant and EnergyX®"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Ductless Split Units",
+        "type": "spec-sheet",
+        "summary": "SKIPPED",
+        "keyProducts": [],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Air Conditioner & Heat Pump Condensing Units with R-410A Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier air conditioner and heat pump condensing units that use R-410A refrigerant. It details the warranty coverage for residential and other applications, including the duration for parts and compressors for original and subsequent owners, and specifies conditions and exclusions.",
+        "keyProducts": [
+          "Air Conditioner Condensing Unit",
+          "Heat Pump Condensing Unit"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Air Conditioner & Heat Pump Condensing Units with R-410A Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for CAC/BDP air conditioner and heat pump condensing units that use R-410A refrigerant. The warranty covers defects in materials or workmanship and varies based on the part (parts, compressor), ownership (original, subsequent), and registration status.",
+        "keyProducts": [
+          "Air Conditioner",
+          "Heat Pump Condensing Units"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty for Commercial Air Conditioning Condensing Unit with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty provided by Carrier Corporation for their commercial air conditioning condensing units that use Puron refrigerant. The warranty covers defects in material and workmanship under normal use, with specific time periods for different components like parts, motor-compressor, and condenser coils.",
+        "keyProducts": [
+          "Commercial Air Conditioning Condensing Unit",
+          "Puron Refrigerant"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty - 50FC, 50GC Packaged Cooling Rooftop Unit with Puron® Refrigerant Commercial Rooftop Equipment",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier's packaged cooling rooftop units with Puron® refrigerant, specifically the 50FC and 50GC series, designed for commercial rooftop equipment applications. The warranty covers defects in material and workmanship under normal use and service, with varying coverage periods for different components.",
+        "keyProducts": [
+          "50FC Packaged Cooling Rooftop Unit",
+          "50GC Packaged Cooling Rooftop Unit"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty - 50K and 50V Commercial Rooftop Equipment",
+        "type": "spec-sheet",
+        "summary": "This is a limited warranty document for Carrier's 50K and 50V commercial rooftop HVAC equipment. The warranty covers defects in materials and workmanship with varying coverage periods: one year for non-consumable parts, three years for microchannel condenser coils, and five years for electric heater elements and ultra-low leak economizers. The document outlines coverage periods, general conditions, and extensive exclusions for labor, maintenance, improper installation, and environmental damage.",
+        "keyProducts": [
+          "50K",
+          "50V"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Limited Warranty - 48K and 48V Commercial Rooftop Equipment",
+        "type": "spec-sheet",
+        "summary": "This document is a limited warranty for Carrier 48K and 48V commercial rooftop equipment. It outlines the warranty periods and scope of coverage for various components, as well as general conditions and limitations.",
+        "keyProducts": [
+          "Carrier 48K Commercial Rooftop Equipment",
+          "Carrier 48V Commercial Rooftop Equipment"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Garantie limitée applicable au groupe condenseur des climatiseurs ou des thermopompes utilisant le frigorigène PuronMD (R-410A)",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier air conditioner or heat pump condensing units using PuronMD (R-410A) refrigerant, specifically for maritime regions. It details warranty periods for parts and compressors for both original and subsequent owners, with specific conditions and exclusions.",
+        "keyProducts": [
+          "Air conditioner condensing units",
+          "Heat pump condensing units",
+          "PuronMD (R-410A) refrigerant systems"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Garantie limitée applicable au groupe condenseur des climatiseurs ou des thermopompes utilisant le frigorigène PuronMD (R-410A)",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier air conditioner and heat pump condensing units that use PuronMD (R-410A) refrigerant. It details the warranty coverage periods for residential and other applications, as well as the conditions and limitations of the warranty.",
+        "keyProducts": [
+          "Carrier air conditioner condensing units",
+          "Carrier heat pump condensing units"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "50TC, 50HC, 50KC Limited Warranty for Commercial Packaged Cooling Rooftop Unit with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document is a limited warranty for Carrier commercial packaged cooling rooftop units that use Puron refrigerant. It outlines the warranty coverage period for various components, including all parts, motor-compressor, electric heater elements, heat exchanger technology condenser coils, and air economizers, while also listing exclusions and limitations.",
+        "keyProducts": [
+          "Commercial Packaged Cooling Rooftop Unit with Puron Refrigerant"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "50TCQ,50HCQ, 50KCQ Limited Warranty for Commercial Packaged Cooling / Heat Pump with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document is a limited warranty for Carrier Corporation's commercial packaged cooling and heat pump equipment using Puron refrigerant. It outlines the warranty coverage period for various components like parts, compressor, electric heater elements, and air economizer, while also listing exclusions and limitations.",
+        "keyProducts": [
+          "50TCQ",
+          "50HCQ",
+          "50KCQ"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Carrier Limited Warranty for Air Conditioner & Heat Pump Condensing Units with Puron (R-410A) Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty provided by Carrier Corporation for their air conditioner and heat pump condensing units that use Puron (R-410A) refrigerant. The warranty covers defects in materials or workmanship and specifies different warranty periods for original and subsequent owners, as well as various conditions, limitations, and exclusions.",
+        "keyProducts": [
+          "Air Conditioner",
+          "Heat Pump Condensing Units",
+          "Puron (R-410A) Refrigerant"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48LC, 3-5 Ton, Limited Warranty for Gas Heating / Electric Cooling Rooftop Unit with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document is a limited warranty for Carrier Corporation's commercial rooftop equipment, specifically for gas heating/electric cooling rooftop units that use Puron refrigerant. It outlines the terms, conditions, exclusions, and time periods for warranty coverage on various components like parts, motor-compressor, heat exchanger, ComfortLink controls, and air economizer.",
+        "keyProducts": [
+          "Gas Heating / Electric Cooling Rooftop Unit with Puron Refrigerant"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "50LC, 3-5 TON, Limited Warranty for Commercial Packaged Cooling Rooftop Unit with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier Commercial Packaged Cooling Rooftop Units that use Puron® Refrigerant. It details the warranty coverage periods for various components, including all parts, motor-compressor, electric heater elements, ComfortLink controls, and air economizers, while also listing exclusions to the warranty.",
+        "keyProducts": [
+          "Commercial Packaged Cooling Rooftop Unit with Puron® Refrigerant"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "50LC 6-25 Ton Limited Warranty for Commercial Packaged Cooling Rooftop Unit with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for Carrier Corporation's commercial packaged cooling rooftop units with Puron refrigerant. The warranty covers defects in material and workmanship under normal use and service, with specific time periods for different components like all parts, motor-compressor, electric heater elements, and air economizer.",
+        "keyProducts": [
+          "Commercial Packaged Cooling Rooftop Unit with Puron Refrigerant"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48LC, 6-25 Ton, Limited Warranty for Gas Heating / Electric Cooling Rooftop Unit with Puron Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This is a limited warranty document for Carrier Corporation's commercial rooftop HVAC units designed for gas heating and electric cooling applications using Puron refrigerant. The warranty covers various components including the motor-compressor (4 years), heat exchanger (9-14 years depending on material), and all parts (1 year), with specific exclusions for maintenance, labor, and improper installation.",
+        "keyProducts": [
+          "Commercial Rooftop Unit with Gas Heating/Electric Cooling",
+          "Puron Refrigerant System",
+          "Motor-Compressor Assembly",
+          "Gas-Fired Heat Exchanger",
+          "Air Economizer"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Garantía limitada Unidad de presión de aire negativa Carrier OptiClean™",
+        "type": "spec-sheet",
+        "summary": "This document is a limited warranty for the Carrier OptiClean™ negative air pressure unit. It outlines the terms and conditions of the warranty, including what is covered and what is not, as well as contact information for service and support.",
+        "keyProducts": [
+          "Carrier OptiClean™"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Opticlean™ Negative Air Machine and Scrubber Limited Warranty",
+        "type": "spec-sheet",
+        "summary": "This document outlines the limited warranty for the OptiClean Negative Air Machine and Scrubber, covering defects in materials or workmanship for one year. It details warranty conditions, limitations, and exclusions, including coverage of the HEPA filter and potential limitations related to COVID-19 particle capture.",
+        "keyProducts": [
+          "OptiClean Negative Air Machine",
+          "OptiClean Scrubber"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Trend Export v2.5 for v8",
+        "type": "spec-sheet",
+        "summary": "Trend Export v2.5 is a software tool designed for v8.0 systems, enabling data export and trend analysis capabilities for HVAC building management and control systems. The document serves as a technical reference guide for implementing and utilizing the export functionality within version 8.0 environments. Specific technical specifications and detailed features are referenced in the Document Revision History section.",
+        "keyProducts": [
+          "Trend Export v2.5",
+          "v8.0"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "i-Vu® v8.0 Trend Conversion Utility",
+        "type": "spec-sheet",
+        "summary": "The document is a user guide for the Trend Conversion Utility by Carrier, likely part of the i-Vu building automation system. It provides instructions for using the utility, with copyright information and disclaimers included.",
+        "keyProducts": [
+          "Trend Conversion Utility",
+          "i-Vu"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "i-Vu® v7.0 Trend Conversion Utility",
+        "type": "spec-sheet",
+        "summary": "The document is a user guide for the Trend Conversion Utility by Carrier, likely related to their i-Vu building automation system. It provides instructions and information for using the utility, which appears to be a software tool.",
+        "keyProducts": [
+          "Trend Conversion Utility",
+          "i-Vu"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "62DA,DB,DC,DD07-38 Vertical or Horizontal Dedicated 100% Outdoor Air Unit with Optional Gas Heat",
+        "type": "spec-sheet",
+        "summary": "The document is a user's information manual for Carrier 62DA, DB, DC, DD07-38 series vertical or horizontal dedicated 100% outdoor air units with optional gas heat. It provides instructions for safe operation, including lighting the unit and safety warnings.",
+        "keyProducts": [
+          "Carrier 62DA",
+          "Carrier 62DB",
+          "Carrier 62DC",
+          "Carrier 62DD07-38"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48HC with ComfortLINK Controls, 48LC with ComfortLINK or Electro-Mechanical Controls Single Package Rooftop Unit Gas Heating/Electric Cooling Units 3 to 25 Nominal Tons with Puron (R-410A) Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document is a user's information manual for Carrier's 48HC and 48LC series of single-package rooftop units (RTUs). These gas heating/electric cooling units, available in 3 to 25 nominal tons, use Puron (R-410A) refrigerant and come with ComfortLINK or electro-mechanical controls.",
+        "keyProducts": [
+          "48HC",
+          "48LC"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48LC Single-Package Rooftop Unit (RTU) Gas Heating/Electric Cooling Units 6 to 23 Nominal Tons with Puron (R-410A) Refrigerant",
+        "type": "spec-sheet",
+        "summary": "This document is a user's information manual for the Carrier 48LC series of single-package rooftop units (RTUs). These gas heating/electric cooling units are designed for commercial applications and range in capacity from 6 to 23 nominal tons, using Puron (R-410A) refrigerant.",
+        "keyProducts": [
+          "48LC"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48N 75-150 Ton Gas Heating/Electric Cooling Units with ComfortLink Controls",
+        "type": "spec-sheet",
+        "summary": "This document is a user's information manual for Carrier 48N series gas heating/electric cooling units with ComfortLink controls. It provides safety instructions, warnings, and procedures for operating and maintaining the rooftop unit.",
+        "keyProducts": [
+          "Carrier 48N 75-150 Ton Gas Heating/Electric Cooling Units",
+          "ComfortLink Controls"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Meeting IAQ Needs With Enhanced Filtration - Carrier 39CC Custom Air Handler Advertorial",
+        "type": "spec-sheet",
+        "summary": "This document is an advertorial from Carrier highlighting the importance of indoor air quality (IAQ) and how their air-handling units can help achieve IAQ goals. It showcases the Carrier® 39CC custom air handler and the reinvented Carrier® Aero® 39M air handler, emphasizing their filtration options and advanced technology.",
+        "keyProducts": [
+          "Carrier® 39CC custom air handler",
+          "Carrier® Aero® 39M air handler"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "48A 020-060 Single-Package Rooftop Gas Heating/Electric Cooling Units with ComfortLink™ Controls and Scroll Compressors",
+        "type": "spec-sheet",
+        "summary": "The 48A 020-060 is a single-package rooftop gas heating and electric cooling unit designed for commercial applications, featuring ComfortLink controls and scroll compressors with direct spark ignition and induced draft power combustion blower. The unit combines heating and cooling functionality in one integrated package suitable for rooftop installation on commercial buildings.",
+        "keyProducts": [
+          "48A 020-060",
+          "Single-Package Rooftop Gas Heating/Electric Cooling Units"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Wired Remote Control Submittal Drawing",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal drawing for the Toshiba Carrier RBC-AMS54E-UL wired remote controller, designed for use with SMMSe/SHRMe VRF controls and accessories. It details the features, dimensions, and wiring diagram of the remote controller, which is compatible with Toshiba Carrier VRF and RAV systems.",
+        "keyProducts": [
+          "Toshiba Carrier RBC-AMS54E-UL Wired Remote Controller"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Unit Ventilator Color Guide",
+        "type": "guide",
+        "summary": "This document is a color guide for Carrier unit ventilators, providing color swatches and sRGB values for Beige, Sky White, and Light Gray colors with a hammertone finish. It includes L*a*b* values for each color and a disclaimer about potential printing variations.",
+        "keyProducts": [
+          "Unit Ventilator"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Heat Pump System Indoor Model: 40MKQB48F--3;  Outdoor Model: 25HHA448A005/224APS048000",
+        "type": "spec-sheet",
+        "summary": "This document describes the submittal data for an Underceiling Heat Pump System, including both indoor and outdoor units. It lists standard and control features, electrical and performance specifications, dimensions, and accessories.",
+        "keyProducts": [
+          "40MKQB48F--3",
+          "25HHA448A005",
+          "224APS048000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Heat Pump System Indoor Model: 40MKQB48F--3;  Outdoor Model: 25HHA448A003/224ANS048000",
+        "type": "spec-sheet",
+        "summary": "This is a submittal data sheet for an underceiling heat pump system consisting of indoor model 40MKQB48F--3 and outdoor model 25HHA448A003/224ANS048000. The system is a convertible floor console/underceiling unit with a 48 size rating, offering cooling capacity of 46,400 Btu/h (SEER 14.0) and heating capacity of 46,400 Btu/h (HSPF 8.2), with operating ranges from -20°F to 125°F and features like wireless remote control, multiple operating modes, and low ambient operation capability.",
+        "keyProducts": [
+          "40MKQB48F--3",
+          "25HHA448A003",
+          "224ANS048000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Heat Pump System Indoor Model: 40MKQB36F--3; Outdoor Model: 25HHA436A005/224APS036000",
+        "type": "spec-sheet",
+        "summary": "This document describes an underceiling heat pump system, including submittal data, standard features, control features, and dimensions. The system consists of an indoor unit (model 40MKQB36F--3) and an outdoor unit (model 25HHA436A005/224APS036000).",
+        "keyProducts": [
+          "40MKQB36F--3",
+          "25HHA436A005",
+          "Underceiling Heat Pump System"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Heat Pump System Indoor Model: 40MKQB36F--3;  Outdoor Model: 25HHA436A006/224AES036000",
+        "type": "spec-sheet",
+        "summary": "This document describes the Underceiling Heat Pump System, specifically the Indoor Model 40MKQB36F--3 and Outdoor Model 25HHA436A006/224AES036000. It details the standard features, control features, electrical specifications, operating range, dimensions, and accessories for the system.",
+        "keyProducts": [
+          "40MKQB36F--3",
+          "25HHA436A006",
+          "224AES036000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Cooling Only System Indoor Model: 40MKCB54F--3;  Outdoor Model: 24AHA448A005/124APS048000",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal data sheet for an underceiling cooling only ductless system. It includes information on the indoor and outdoor models, standard and control features, electrical and performance specifications, dimensions, and accessories.",
+        "keyProducts": [
+          "40MKCB54F--3",
+          "24AHA448A005",
+          "124APS048000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Heat Pump System Indoor Model: 40MKQB36F--3;  Outdoor Model: 25HHA436A003/224ANS036000",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal data sheet for an Underceiling Heat Pump System, including both indoor and outdoor units. It details the specifications, features, dimensions, and accessories for the 40MKQB36F--3 indoor model and the 25HHA436A003/224ANS036000 outdoor model.",
+        "keyProducts": [
+          "40MKQB36F--3",
+          "25HHA436A003",
+          "224ANS036000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Cooling Only System Indoor Model: 40MKCB54F--3;  Outdoor Model: 24AHA460A006/124AES060000",
+        "type": "spec-sheet",
+        "summary": "This document describes the submittal data, standard features, control features, and dimensions of a Carrier underceiling cooling only ductless system. The indoor model is 40MKCB54F-3 and the outdoor model is 24AHA460A006/124AES060000.",
+        "keyProducts": [
+          "40MKCB54F-3",
+          "24AHA460A006",
+          "124AES060000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Cooling Only System Indoor Model: 40MKCB54F--3;  Outdoor Model: 24AHA460A005/124APS060000",
+        "type": "spec-sheet",
+        "summary": "This document provides submittal data and construction views for a ductless underceiling cooling only system. It includes specifications for the indoor model 40MKCB54F--3 and outdoor model 24AHA460A005/124APS060000, detailing their dimensions, electrical characteristics, performance metrics, and standard/control features.",
+        "keyProducts": [
+          "40MKCB54F--3",
+          "24AHA460A005",
+          "124APS060000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Cooling Only System Indoor Model: 40MKCB34F--3;  Outdoor Model: 24AHA430A003/124ANS030000",
+        "type": "spec-sheet",
+        "summary": "This document provides submittal data and construction views for an underceiling cooling only system. The indoor model is 40MKCB34F-3 and the outdoor model is 24AHA430A003/124ANS030000, with information on standard features, control features, electrical specifications, dimensions, and accessories.",
+        "keyProducts": [
+          "40MKCB34F-3",
+          "24AHA430A003",
+          "124ANS030000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Underceiling Cooling Only System Indoor Model: 40MKCB18F--3;  Outdoor Model: 24AHA418A003/124ANS018000",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal data sheet for a Carrier underceiling cooling only system. It includes information for the indoor model 40MKCB18F--3 and outdoor model 24AHA418A003/124ANS018000, detailing standard features, control features, performance data, electrical specifications, dimensions, and accessories.",
+        "keyProducts": [
+          "40MKCB18F--3",
+          "24AHA418A003",
+          "124ANS018000"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Touch Screen Central Controller Submittal Drawing",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal drawing for the Toshiba Carrier VRF Touch Screen Central Controller, model BMS-CT5120UL. It details the features, specifications, and components of the controller, which is designed for grouping, operating, and monitoring VRF systems in buildings.",
+        "keyProducts": [
+          "BMS-CT5120UL"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Slim Duct Indoor Unit Submittal Drawing (7.0 KBtu)",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal data sheet for the Toshiba Carrier SMMSe/SHRMe VRF Slim Duct Indoor Unit, specifically the MMD-AP0074SPH2UL model. It details the unit's features, performance specifications, electrical characteristics, physical dimensions, and available accessories, along with a dimensional drawing for installation planning.",
+        "keyProducts": [
+          "MMD-AP0074SPH2UL"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Slim Duct Indoor Unit Submittal Drawing (15.0 KBtu)",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal data sheet and dimensional drawing for the Toshiba Carrier SMMSe/SHRMe VRF Slim Duct Indoor Unit, specifically model MMD-AP0154SPH2UL. It details the unit's features, performance specifications, electrical characteristics, physical dimensions, and available accessories.",
+        "keyProducts": [
+          "Toshiba Carrier SMMSe/SHRMe VRF Slim Duct Indoor Unit",
+          "MMD-AP0154SPH2UL"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Slim Duct Indoor Unit Submittal Drawing (12.0 KBtu)",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal drawing for the Toshiba Carrier SMMSe/SHRMe VRF Slim Duct Indoor Unit, specifically model MMD-AP0124SPH2UL. It details the unit's features, performance specifications, electrical data, physical dimensions, and available accessories, along with dimensional drawings for installation and service.",
+        "keyProducts": [
+          "SMMSe / SHRMe VRF Slim Duct Indoor Unit",
+          "MMD-AP0124SPH2UL"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Slim Duct Indoor Unit Submittal Drawing (18.0 KBtu)",
+        "type": "spec-sheet",
+        "summary": "This document is a submittal data sheet for the Toshiba Carrier SMMSe/SHRMe VRF Slim Duct Indoor Unit, specifically model MMD-AP0184SPH2UL. It details the unit's features, performance specifications, electrical characteristics, physical dimensions, and available accessories, suitable for residential or commercial HVAC applications.",
+        "keyProducts": [
+          "MMD-AP0184SPH2UL"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Single Port Flow Selector (Long) Submittal Drawing",
+        "type": "spec-sheet",
+        "summary": "The RBM-Y0384FUL is a Single Port Flow Selector (Long) component for Toshiba Carrier VRF (Variable Refrigerant Flow) HVAC systems, designed to distribute refrigerant to multiple indoor units from a single outdoor unit connection point. It supports up to 5 connectable indoor units with individual capacities below 38 kBtu/h and allows maximum piping lengths of 164 feet between the port and indoor units. The unit operates on 208-230V single-phase 60Hz power and features brazed refrigerant connectio",
+        "keyProducts": [
+          "RBM-Y0384FUL",
+          "Single Port Flow Selector (Long)"
+        ],
+        "keySpecs": []
+      },
+      {
+        "docTitle": "Toshiba Carrier VRF Single Phase Heat Pump Outdoor Unit, 5 Ton, 208/230-1-60",
+        "type": "spec-sheet",
+        "summary": "This document describes the Toshiba Carrier SMMS-e single VRF outdoor unit, specifically the MCY-MAP0607HS-UL model, which is a 5-ton heat pump designed for residential or commercial HVAC systems. It features an inverter-driven twin rotary compressor, wide operating temperature range, and multiple protection mechanisms, along with a 7-year compressor and 5-year parts limited warranty.",
+        "keyProducts": [
+          "MCY-MAP0607HS-UL"
+        ],
+        "keySpecs": []
+      }
+    ]
+  },
+  "competitors": {
+    "trane": {
+      "name": "Trane",
+      "totalDocs": 7050,
+      "docsByType": {
+        "spec-sheet": 4321,
+        "iom": 1712,
+        "brochure": 776,
+        "guide": 241
+      },
+      "summaryCount": 4701,
+      "topProducts": [
+        {
+          "name": "Voyager 3",
+          "count": 278
+        },
+        {
+          "name": "Rooftop Packaged Air Conditioner",
+          "count": 99
+        },
+        {
+          "name": "IntelliPak II",
+          "count": 84
+        },
+        {
+          "name": "Trane Precedent",
+          "count": 81
+        },
+        {
+          "name": "Voyager III",
+          "count": 72
+        },
+        {
+          "name": "Voyager Light Commercial",
+          "count": 63
+        },
+        {
+          "name": "Hermetic Centrifugal Liquid Chiller",
+          "count": 53
+        },
+        {
+          "name": "CenTraVac",
+          "count": 50
+        },
+        {
+          "name": "TC*330A",
+          "count": 49
+        },
+        {
+          "name": "TC*600A",
+          "count": 49
+        },
+        {
+          "name": "TE*330A",
+          "count": 49
+        },
+        {
+          "name": "TE*600A",
+          "count": 49
+        },
+        {
+          "name": "YC*330A",
+          "count": 49
+        },
+        {
+          "name": "YC*600A",
+          "count": 49
+        },
+        {
+          "name": "Voyager Large Commercial",
+          "count": 44
+        },
+        {
+          "name": "CVHF",
+          "count": 40
+        },
+        {
+          "name": "Trane Voyager 3",
+          "count": 39
+        },
+        {
+          "name": "Voyager II",
+          "count": 38
+        },
+        {
+          "name": "Voyager 2",
+          "count": 37
+        },
+        {
+          "name": "Control Box",
+          "count": 36
+        }
+      ]
+    },
+    "daikin-applied": {
+      "name": "Daikin Applied",
+      "totalDocs": 201,
+      "docsByType": {
+        "iom": 78,
+        "brochure": 59,
+        "spec-sheet": 33,
+        "catalog": 29,
+        "guide": 2
+      },
+      "summaryCount": 149,
+      "topProducts": [
+        {
+          "name": "Maverick II",
+          "count": 5
+        },
+        {
+          "name": "HSC",
+          "count": 5
+        },
+        {
+          "name": "HDC",
+          "count": 5
+        },
+        {
+          "name": "TSC",
+          "count": 5
+        },
+        {
+          "name": "WCC",
+          "count": 5
+        },
+        {
+          "name": "AGZ",
+          "count": 5
+        },
+        {
+          "name": "WMC",
+          "count": 4
+        },
+        {
+          "name": "AHF",
+          "count": 4
+        },
+        {
+          "name": "AHV",
+          "count": 4
+        },
+        {
+          "name": "AHR",
+          "count": 4
+        },
+        {
+          "name": "AHB (F Vintage)",
+          "count": 4
+        },
+        {
+          "name": "Model DPS",
+          "count": 3
+        },
+        {
+          "name": "RoofPak",
+          "count": 3
+        },
+        {
+          "name": "MicroTech® II Chiller Unit Controller",
+          "count": 3
+        },
+        {
+          "name": "WSC",
+          "count": 3
+        },
+        {
+          "name": "WDC",
+          "count": 3
+        },
+        {
+          "name": "WPV",
+          "count": 3
+        },
+        {
+          "name": "MicroTech® II Chiller",
+          "count": 3
+        },
+        {
+          "name": "Daikin Building Controls",
+          "count": 3
+        },
+        {
+          "name": "UAV",
+          "count": 3
+        }
+      ]
+    },
+    "jci": {
+      "name": "Johnson Controls",
+      "totalDocs": 5227,
+      "docsByType": {
+        "iom": 2223,
+        "brochure": 1981,
+        "spec-sheet": 670,
+        "guide": 309,
+        "catalog": 44
+      },
+      "summaryCount": 3485,
+      "topProducts": [
+        {
+          "name": "OptiView Control Center",
+          "count": 44
+        },
+        {
+          "name": "YVAA",
+          "count": 32
+        },
+        {
+          "name": "YLAA",
+          "count": 24
+        },
+        {
+          "name": "YVFA",
+          "count": 21
+        },
+        {
+          "name": "HT M1 G1",
+          "count": 21
+        },
+        {
+          "name": "YK Chillers",
+          "count": 21
+        },
+        {
+          "name": "YCIV",
+          "count": 20
+        },
+        {
+          "name": "OT R3 G1",
+          "count": 19
+        },
+        {
+          "name": "YCAV",
+          "count": 19
+        },
+        {
+          "name": "MQL Indoor Air Handling Unit",
+          "count": 18
+        },
+        {
+          "name": "OT T4 G2",
+          "count": 17
+        },
+        {
+          "name": "HT T2 G2",
+          "count": 17
+        },
+        {
+          "name": "OT A1",
+          "count": 17
+        },
+        {
+          "name": "OT M1 G1",
+          "count": 16
+        },
+        {
+          "name": "YKEP",
+          "count": 15
+        },
+        {
+          "name": "YCAL",
+          "count": 15
+        },
+        {
+          "name": "YCWL",
+          "count": 15
+        },
+        {
+          "name": "XP078",
+          "count": 15
+        },
+        {
+          "name": "XP150",
+          "count": 15
+        },
+        {
+          "name": "TempMaster OmniElite",
+          "count": 15
+        }
+      ]
+    },
+    "multistack": {
+      "name": "Multistack",
+      "totalDocs": 60,
+      "docsByType": {
+        "catalog": 22,
+        "spec_sheet": 21,
+        "brochure": 16,
+        "iom": 1
+      },
+      "summaryCount": 60,
+      "topProducts": [
+        {
+          "name": "MagLev Marine chillers",
+          "count": 1
+        }
+      ]
+    }
+  }
+}
