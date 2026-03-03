@@ -57,13 +57,7 @@
   --warning-bg:          #FFECAA;
 }
 
-@layer base {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-}
+/* Tailwind v4 preflight handles box-sizing and margin resets */
 
 body {
   background: var(--background);
